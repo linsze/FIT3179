@@ -27,7 +27,7 @@
       "type": "quantitative",
       "scale": {
         "type": "threshold",
-        "domain": [0.55, 0.6, 0.8],
+        "domain": [0.5, 0.65, 0.85],
         "range": ["#edf8fb", "#b3cde3", "#8c96c6", "#88419d"]
       }
     },
