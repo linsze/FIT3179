@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
-  <!-- Import vega-embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
 
   <div id="title"> Human Development </div>
-  <div id="choropleth_map"></div>
+  <div class="map">
+    <div id="choropleth_map"></div>
+  </div>
 
 <script type="text/javascript">
   var spec = "https://linsze.github.io/FIT3179/js/choropleth_map.json";
   vegaEmbed('#choropleth_map', spec).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
 
