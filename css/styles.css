@@ -1,0 +1,13 @@
+body {
+    background-color: gray;
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin-block: 10px;
+}
+
