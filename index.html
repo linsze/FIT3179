@@ -16,10 +16,15 @@
   <div class="map">
     <div id="choropleth_map"></div>
   </div>
+  <div id="life_vs_gni_bubble"></div>
 
 <script type="text/javascript">
   var specVis1 = "https://linsze.github.io/FIT3179/js/choropleth_map.json";
   vegaEmbed('#choropleth_map', specVis1).then(function(result) {
+  }).catch(console.error);
+
+  var specVis2 = "https://linsze.github.io/FIT3179/js/lifexpec_gni_bubble.json";
+  vegaEmbed('#life_vs_gni_bubble', specVis2).then(function(result) {
   }).catch(console.error);
 </script>
 
