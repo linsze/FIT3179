@@ -1,0 +1,377 @@
+﻿Country,Continent,Gender,Life Expectancy at Birth
+Norway,Europe,Female,83.6
+Australia,Oceania,Female,84.5
+Switzerland,Europe,Female,85
+Denmark,North America,Female,82.2
+Netherlands,North America,Female,83.3
+Germany,Europe,Female,83.3
+Ireland,Europe,Female,83
+United States,North America,Female,81.4
+Canada,North America,Female,84
+New Zealand,Oceania,Female,83.6
+Singapore,Asia,Female,86
+"Hong Kong, China (SAR)",Asia,Female,86.8
+Liechtenstein,Europe,Female,0
+Sweden,Europe,Female,83.9
+United Kingdom,Europe,Female,82.6
+Iceland,Europe,Female,84
+Korea (Republic of),Asia,Female,85
+Israel,Asia,Female,84.1
+Luxembourg,Europe,Female,83.9
+Japan,Asia,Female,86.7
+Belgium,Europe,Female,83.2
+France,Europe,Female,85.1
+Austria,Europe,Female,83.8
+Finland,Europe,Female,83.6
+Slovenia,Europe,Female,83.4
+Spain,Europe,Female,85.3
+Italy,Europe,Female,85.5
+Czech Republic,Europe,Female,81.5
+Greece,Europe,Female,83.8
+Estonia,Europe,Female,81.3
+Brunei Darussalam,Asia,Female,80.7
+Cyprus,Europe,Female,82.4
+Qatar,Asia,Female,79.9
+Andorra,Europe,Female,0
+Slovakia,Europe,Female,79.9
+Poland,Europe,Female,81.4
+Lithuania,Europe,Female,78.9
+Malta,Europe,Female,82.2
+Saudi Arabia,Asia,Female,75.7
+Argentina,South America,Female,80.1
+United Arab Emirates,Asia,Female,78.5
+Chile,South America,Female,84.5
+Portugal,Europe,Female,83.8
+Hungary,Europe,Female,78.7
+Bahrain,Asia,Female,77.6
+Latvia,Europe,Female,78.9
+Croatia,Europe,Female,80.6
+Kuwait,Asia,Female,75.8
+Montenegro,Europe,Female,78.4
+Belarus,Europe,Female,77.2
+Russian Federation,Asia,Female,75.8
+Oman,Asia,Female,79.2
+Romania,Europe,Female,78.3
+Uruguay,South America,Female,80.6
+Bahamas,North America,Female,78.3
+Kazakhstan,Asia,Female,74.1
+Barbados,North America,Female,78
+Antigua and Barbuda,North America,Female,78.5
+Bulgaria,Europe,Female,77.7
+Palau,Oceania,Female,0
+Panama,North America,Female,80.7
+Malaysia,Asia,Female,77.1
+Mauritius,Africa,Female,78
+Seychelles,Africa,Female,78.1
+Trinidad and Tobago,North America,Female,74
+Serbia,Europe,Female,77.7
+Cuba,North America,Female,81.5
+Lebanon,Asia,Female,81.3
+Costa Rica,North America,Female,81.9
+Iran (Islamic Republic of),Asia,Female,76.5
+Venezuela (Bolivarian Republic of),South America,Female,78.5
+Turkey,Asia,Female,78.5
+Sri Lanka,Asia,Female,78.2
+Mexico,North America,Female,79.2
+Brazil,South America,Female,78.3
+Georgia,Asia,Female,78.4
+Saint Kitts and Nevis,North America,Female,0
+Azerbaijan,Asia,Female,74
+Grenada,North America,Female,75.9
+Jordan,Asia,Female,75.8
+The former Yugoslav Republic of Macedonia,Europe,Female,77.7
+Ukraine,Europe,Female,75.9
+Algeria,Africa,Female,77.2
+Peru,South America,Female,77.2
+Albania,Europe,Female,80.4
+Armenia,Asia,Female,78.6
+Bosnia and Herzegovina,Europe,Female,79
+Ecuador,South America,Female,78.7
+Saint Lucia,North America,Female,77.8
+China,Asia,Female,77.3
+Fiji,Oceania,Female,73.2
+Mongolia,Asia,Female,73.9
+Thailand,Asia,Female,77.9
+Dominica,North America,Female,0
+Libya,Africa,Female,74.6
+Tunisia,Africa,Female,77.3
+Colombia,North America,Female,77.7
+Saint Vincent and the Grenadines,North America,Female,75.1
+Jamaica,North America,Female,78.1
+Tonga,Oceania,Female,75.8
+Belize,North America,Female,72.9
+Dominican Republic,North America,Female,76.7
+Suriname,South America,Female,74.4
+Maldives,Asia,Female,77.8
+Samoa,Oceania,Female,76.8
+Botswana,Africa,Female,66.8
+Moldova (Republic of),Europe,Female,75.7
+Egypt,Africa,Female,73.4
+Turkmenistan,Asia,Female,69.9
+Gabon,Africa,Female,65
+Indonesia,Asia,Female,71
+Paraguay,South America,Female,75.1
+"Palestine, State of",Asia,Female,74.9
+Uzbekistan,Asia,Female,71.8
+Philippines,Asia,Female,71.8
+El Salvador,North America,Female,77.4
+South Africa,Africa,Female,59.3
+Viet Nam,Asia,Female,80.5
+Bolivia (Plurinational State of),South America,Female,70.9
+Kyrgyzstan,Asia,Female,74.6
+Iraq,Asia,Female,71.7
+Cabo Verde,Africa,Female,75
+Micronesia (Federated States of),Oceania,Female,70.1
+Guyana,South America,Female,68.8
+Nicaragua,North America,Female,77.9
+Morocco,Africa,Female,75.1
+Namibia,Africa,Female,67.3
+Guatemala,North America,Female,75.3
+Tajikistan,Asia,Female,73.2
+India,Asia,Female,69.5
+Honduras,North America,Female,75.7
+Bhutan,Asia,Female,69.7
+Timor-Leste,Asia,Female,70.1
+Syrian Arab Republic,Asia,Female,76.5
+Vanuatu,Oceania,Female,74
+Congo,Africa,Female,63.9
+Kiribati,Oceania,Female,69.2
+Equatorial Guinea,Africa,Female,59
+Zambia,Africa,Female,62
+Ghana,Africa,Female,62.3
+Lao People's Democratic Republic,Asia,Female,67.5
+Bangladesh,Asia,Female,72.9
+Cambodia,Asia,Female,70.3
+Sao Tome and Principe,Africa,Female,68.4
+Kenya,Africa,Female,63.4
+Nepal,Asia,Female,71.1
+Pakistan,Asia,Female,67.2
+Myanmar,Asia,Female,68
+Angola,Africa,Female,53.8
+Swaziland,Africa,Female,48.2
+Tanzania (United Republic of),Africa,Female,66.4
+Nigeria,Africa,Female,53.1
+Cameroon,Africa,Female,56.7
+Madagascar,Africa,Female,66.6
+Zimbabwe,Africa,Female,58.9
+Mauritania,Africa,Female,64.5
+Solomon Islands,Oceania,Female,69.4
+Papua New Guinea,Oceania,Female,64.8
+Comoros,Africa,Female,65
+Yemen,Asia,Female,65.2
+Lesotho,Africa,Female,49.8
+Togo,Africa,Female,60.4
+Haiti,North America,Female,64.9
+Rwanda,Africa,Female,67
+Uganda,Africa,Female,60.3
+Benin,Africa,Female,61
+Sudan,Africa,Female,65
+Djibouti,Africa,Female,63.7
+South Sudan,Africa,Female,56.7
+Senegal,Africa,Female,68.3
+Afghanistan,Asia,Female,61.6
+CÃ´te d'Ivoire,Africa,Female,52.4
+Malawi,Africa,Female,63.7
+Ethiopia,Africa,Female,66
+Gambia,Africa,Female,61.6
+Congo (Democratic Republic of the),Africa,Female,60.1
+Liberia,Africa,Female,61.8
+Guinea-Bissau,Africa,Female,57
+Mali,Africa,Female,57.8
+Mozambique,Africa,Female,56.5
+Sierra Leone,Africa,Female,51.4
+Guinea,Africa,Female,59.2
+Burkina Faso,Africa,Female,59.9
+Burundi,Africa,Female,58.7
+Chad,Africa,Female,52.7
+Eritrea,Africa,Female,65.9
+Central African Republic,Africa,Female,52.6
+Niger,Africa,Female,62.4
+Norway,Europe,Male,79.5
+Australia,Oceania,Male,80.3
+Switzerland,Europe,Male,80.8
+Denmark,North America,Male,78.3
+Netherlands,North America,Male,79.7
+Germany,Europe,Male,78.5
+Ireland,Europe,Male,78.8
+United States,North America,Male,76.7
+Canada,North America,Male,80
+New Zealand,Oceania,Male,80
+Singapore,Asia,Male,79.9
+"Hong Kong, China (SAR)",Asia,Male,81.2
+Liechtenstein,Europe,Male,0
+Sweden,Europe,Male,80.4
+United Kingdom,Europe,Male,78.7
+Iceland,Europe,Male,81
+Korea (Republic of),Asia,Male,78.5
+Israel,Asia,Male,80.5
+Luxembourg,Europe,Male,79.3
+Japan,Asia,Male,80.2
+Belgium,Europe,Male,78.3
+France,Europe,Male,79.2
+Austria,Europe,Male,78.8
+Finland,Europe,Male,78
+Slovenia,Europe,Male,77.3
+Spain,Europe,Male,79.8
+Italy,Europe,Male,80.6
+Czech Republic,Europe,Male,75.7
+Greece,Europe,Male,78
+Estonia,Europe,Male,72
+Brunei Darussalam,Asia,Male,77
+Cyprus,Europe,Male,78
+Qatar,Asia,Male,77.3
+Andorra,Europe,Male,0
+Slovakia,Europe,Male,72.5
+Poland,Europe,Male,73.4
+Lithuania,Europe,Male,67.7
+Malta,Europe,Male,78.8
+Saudi Arabia,Asia,Male,73
+Argentina,South America,Male,72.4
+United Arab Emirates,Asia,Male,76.3
+Chile,South America,Male,78.6
+Portugal,Europe,Male,77.9
+Hungary,Europe,Male,71.5
+Bahrain,Asia,Male,75.8
+Latvia,Europe,Male,69.1
+Croatia,Europe,Male,74
+Kuwait,Asia,Male,73.5
+Montenegro,Europe,Male,74.1
+Belarus,Europe,Male,65.5
+Russian Federation,Asia,Male,64.4
+Oman,Asia,Male,75.1
+Romania,Europe,Male,71.2
+Uruguay,South America,Male,73.5
+Bahamas,North America,Male,72.3
+Kazakhstan,Asia,Male,64.6
+Barbados,North America,Male,73.2
+Antigua and Barbuda,North America,Male,73.5
+Bulgaria,Europe,Male,70.8
+Palau,Oceania,Male,0
+Panama,North America,Male,74.6
+Malaysia,Asia,Male,72.4
+Mauritius,Africa,Male,70.9
+Seychelles,Africa,Male,68.9
+Trinidad and Tobago,North America,Male,67
+Serbia,Europe,Male,72.1
+Cuba,North America,Male,77.4
+Lebanon,Asia,Male,77.6
+Costa Rica,North America,Male,77
+Iran (Islamic Republic of),Asia,Male,74.3
+Venezuela (Bolivarian Republic of),South America,Male,70.2
+Turkey,Asia,Male,72
+Sri Lanka,Asia,Male,71.5
+Mexico,North America,Male,74.4
+Brazil,South America,Male,70.7
+Georgia,Asia,Male,71.2
+Saint Kitts and Nevis,North America,Male,0
+Azerbaijan,Asia,Male,67.7
+Grenada,North America,Male,71
+Jordan,Asia,Male,72.4
+The former Yugoslav Republic of Macedonia,Europe,Male,73.1
+Ukraine,Europe,Male,66
+Algeria,Africa,Male,72.5
+Peru,South America,Male,71.9
+Albania,Europe,Male,75.4
+Armenia,Asia,Male,70.9
+Bosnia and Herzegovina,Europe,Male,74
+Ecuador,South America,Male,73.2
+Saint Lucia,North America,Male,72.4
+China,Asia,Male,74.3
+Fiji,Oceania,Male,67.2
+Mongolia,Asia,Male,65.3
+Thailand,Asia,Male,71.1
+Dominica,North America,Male,0
+Libya,Africa,Male,68.9
+Tunisia,Africa,Male,72.5
+Colombia,North America,Male,70.5
+Saint Vincent and the Grenadines,North America,Male,70.9
+Jamaica,North America,Male,73.3
+Tonga,Oceania,Male,69.9
+Belize,North America,Male,67.4
+Dominican Republic,North America,Male,70.4
+Suriname,South America,Male,68
+Maldives,Asia,Male,75.8
+Samoa,Oceania,Male,70.4
+Botswana,Africa,Male,62.1
+Moldova (Republic of),Europe,Male,67.4
+Egypt,Africa,Male,69
+Turkmenistan,Asia,Male,61.5
+Gabon,Africa,Male,63.8
+Indonesia,Asia,Male,66.9
+Paraguay,South America,Male,70.8
+"Palestine, State of",Asia,Male,71
+Uzbekistan,Asia,Male,65
+Philippines,Asia,Male,64.9
+El Salvador,North America,Male,68.3
+South Africa,Africa,Male,55.2
+Viet Nam,Asia,Male,71
+Bolivia (Plurinational State of),South America,Male,65.9
+Kyrgyzstan,Asia,Male,66.6
+Iraq,Asia,Male,67.2
+Cabo Verde,Africa,Male,71.4
+Micronesia (Federated States of),Oceania,Male,68.1
+Guyana,South America,Male,64.2
+Nicaragua,North America,Male,71.9
+Morocco,Africa,Male,73
+Namibia,Africa,Male,62.1
+Guatemala,North America,Male,68.3
+Tajikistan,Asia,Male,66.2
+India,Asia,Male,66.6
+Honduras,North America,Male,70.7
+Bhutan,Asia,Male,69.2
+Timor-Leste,Asia,Male,66.5
+Syrian Arab Republic,Asia,Male,64
+Vanuatu,Oceania,Male,69.9
+Congo,Africa,Male,60.8
+Kiribati,Oceania,Male,62.8
+Equatorial Guinea,Africa,Male,56.3
+Zambia,Africa,Male,58.2
+Ghana,Africa,Male,60.4
+Lao People's Democratic Republic,Asia,Male,64.8
+Bangladesh,Asia,Male,70.4
+Cambodia,Asia,Male,66.2
+Sao Tome and Principe,Africa,Male,64.4
+Kenya,Africa,Male,59.9
+Nepal,Asia,Male,68.2
+Pakistan,Asia,Male,65.3
+Myanmar,Asia,Male,63.9
+Angola,Africa,Male,50.8
+Swaziland,Africa,Male,49.6
+Tanzania (United Republic of),Africa,Male,63.5
+Nigeria,Africa,Male,52.4
+Cameroon,Africa,Male,54.4
+Madagascar,Africa,Male,63.6
+Zimbabwe,Africa,Male,56.2
+Mauritania,Africa,Male,61.6
+Solomon Islands,Oceania,Male,66.5
+Papua New Guinea,Oceania,Male,60.5
+Comoros,Africa,Male,61.6
+Yemen,Asia,Male,62.5
+Lesotho,Africa,Male,49.6
+Togo,Africa,Male,58.9
+Haiti,North America,Male,60.7
+Rwanda,Africa,Male,61.1
+Uganda,Africa,Male,56.7
+Benin,Africa,Male,58.1
+Sudan,Africa,Male,62
+Djibouti,Africa,Male,60.4
+South Sudan,Africa,Male,54.7
+Senegal,Africa,Male,64.5
+Afghanistan,Asia,Male,59.2
+CÃ´te d'Ivoire,Africa,Male,50.7
+Malawi,Africa,Male,61.7
+Ethiopia,Africa,Male,62.2
+Gambia,Africa,Male,58.9
+Congo (Democratic Republic of the),Africa,Male,57.2
+Liberia,Africa,Male,59.9
+Guinea-Bissau,Africa,Male,53.4
+Mali,Africa,Male,58.2
+Mozambique,Africa,Male,53.6
+Sierra Leone,Africa,Male,50.4
+Guinea,Africa,Male,58.3
+Burkina Faso,Africa,Male,57.3
+Burundi,Africa,Male,54.8
+Chad,Africa,Male,50.5
+Eritrea,Africa,Male,61.6
+Central African Republic,Africa,Male,48.8
+Niger,Africa,Male,60.6
