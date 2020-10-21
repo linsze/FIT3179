@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Average Life Expectancy at Birth",
   "width": 350,
   "height": 250,
   "background": "#ecd9c6",
@@ -34,7 +35,7 @@
       "type": "quantitative",
       "title": "Average Life Expectancy (years)",
       "scale": {"domain": [58, 78]},
-      "axis": {"gridColor": "#ffe5cc"}
+      "axis": null
     },
     "y": {
       "field": "Continent",
@@ -47,7 +48,7 @@
       "mark": {"type": "line", "strokeWidth": 3},
       "encoding": {
         "detail": {"field": "Continent", "type": "nominal"},
-        "color": {"value": "#ccccb3"}
+        "color": {"value": "#caaaa3"}
       }
     },
     {
@@ -64,6 +65,20 @@
         },
         "size": {"value": 400},
         "opacity": {"value": 1}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "line-bottom",
+        "dx": -10,
+        "fontSize": 11,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Mean_life", "type": "quantitative", "format": ".1f"},
+        "color": {"value": "black"}
       }
     }
   ],
