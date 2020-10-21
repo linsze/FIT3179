@@ -1,16 +1,21 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    color: #4d1300;
+}
 body {
     background-color: #ecd9c6;
 }
 
 #title {
-    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
-    text-align: center;
-    margin-block: 10px;
 }
 
-.map {
+.center_text {
+    text-align: center;
+}
+
+.center {
     display: flex;
     justify-content: center;
 }
