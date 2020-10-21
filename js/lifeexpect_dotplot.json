@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 400,
+  "height": 250,
+  "background": "#ecd9c6",
+  "data": {
+    "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/Life_Expectancy_at_Birth.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Continent",
+        "oneOf": [
+          "Asia",
+          "Africa",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ]
+      }
+    },
+    {"filter": {"field": "Gender", "oneOf": ["Male", "Female"]}},
+    {
+      "aggregate": [
+        {"op": "mean", "field": "Life Expectancy at Birth", "as": "Mean_life"}
+      ],
+      "groupby": ["Continent", "Gender"]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Mean_life",
+      "type": "quantitative",
+      "title": "Average Life Expectancy (years)",
+      "scale": {"domain": [58, 78]},
+      "axis": {"gridColor": "#ffe5cc"}
+    },
+    "y": {
+      "field": "Continent",
+      "type": "nominal",
+      "axis": {"offset": 5, "ticks": false, "minExtent": 70, "domain": false}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 3},
+      "encoding": {
+        "detail": {"field": "Continent", "type": "nominal"},
+        "color": {"value": "#ccccb3"}
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true},
+      "encoding": {
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Male", "Female"],
+            "range": ["#666699", "#b35900"]
+          },
+          "title": "Gender"
+        },
+        "size": {"value": 400},
+        "opacity": {"value": 1}
+      }
+    }
+  ],
+  "config": {}
+}

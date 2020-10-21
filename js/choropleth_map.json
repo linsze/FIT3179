@@ -19,7 +19,7 @@
       }
     }
   ],
-  "projection": {"type": "equirectangular"},
+  "projection": {"type": "equalEarth"},
   "mark": {"type": "geoshape", "stroke": "#9494b8"},
   "encoding": {
     "color": {
