@@ -15,7 +15,7 @@
           "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/human_development.csv"
         },
         "key": "Country",
-        "fields": ["Human Development Index (HDI)"]
+        "fields": ["Human Development Index (HDI)", "HDI Rank"]
       }
     }
   ],
@@ -35,6 +35,7 @@
       }
     },
     "tooltip": [
+      {"field": "HDI Rank", "type": "ordinal", "title": "Rank"},
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
       {
         "field": "Human Development Index (HDI)",

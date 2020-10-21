@@ -1,0 +1,377 @@
+﻿Country,Continent,Education,Years of Education
+Norway,Europe,Mean,12.6
+Australia,Oceania,Mean,13
+Switzerland,Europe,Mean,12.8
+Denmark,North America,Mean,12.7
+Netherlands,North America,Mean,11.9
+Germany,Europe,Mean,13.1
+Ireland,Europe,Mean,12.2
+United States,North America,Mean,12.9
+Canada,North America,Mean,13
+New Zealand,Oceania,Mean,12.5
+Singapore,Asia,Mean,10.6
+"Hong Kong, China (SAR)",Asia,Mean,11.2
+Liechtenstein,Europe,Mean,11.8
+Sweden,Europe,Mean,12.1
+United Kingdom,Europe,Mean,13.1
+Iceland,Europe,Mean,10.6
+Korea (Republic of),Asia,Mean,11.9
+Israel,Asia,Mean,12.5
+Luxembourg,Europe,Mean,11.7
+Japan,Asia,Mean,11.5
+Belgium,Europe,Mean,11.3
+France,Europe,Mean,11.1
+Austria,Europe,Mean,10.8
+Finland,Europe,Mean,10.3
+Slovenia,Europe,Mean,11.9
+Spain,Europe,Mean,9.6
+Italy,Europe,Mean,10.1
+Czech Republic,Europe,Mean,12.3
+Greece,Europe,Mean,10.3
+Estonia,Europe,Mean,12.5
+Brunei Darussalam,Asia,Mean,8.8
+Cyprus,Europe,Mean,11.6
+Qatar,Asia,Mean,9.1
+Andorra,Europe,Mean,9.6
+Slovakia,Europe,Mean,12.2
+Poland,Europe,Mean,11.8
+Lithuania,Europe,Mean,12.4
+Malta,Europe,Mean,10.3
+Saudi Arabia,Asia,Mean,8.7
+Argentina,South America,Mean,9.8
+United Arab Emirates,Asia,Mean,9.5
+Chile,South America,Mean,9.8
+Portugal,Europe,Mean,8.2
+Hungary,Europe,Mean,11.6
+Bahrain,Asia,Mean,9.4
+Latvia,Europe,Mean,11.5
+Croatia,Europe,Mean,11
+Kuwait,Asia,Mean,7.2
+Montenegro,Europe,Mean,11.2
+Belarus,Europe,Mean,12
+Russian Federation,Asia,Mean,12
+Oman,Asia,Mean,8
+Romania,Europe,Mean,10.8
+Uruguay,South America,Mean,8.5
+Bahamas,North America,Mean,10.9
+Kazakhstan,Asia,Mean,11.4
+Barbados,North America,Mean,10.5
+Antigua and Barbuda,North America,Mean,9.2
+Bulgaria,Europe,Mean,10.6
+Palau,Oceania,Mean,12.3
+Panama,North America,Mean,9.3
+Malaysia,Asia,Mean,10
+Mauritius,Africa,Mean,8.5
+Seychelles,Africa,Mean,9.4
+Trinidad and Tobago,North America,Mean,10.9
+Serbia,Europe,Mean,10.5
+Cuba,North America,Mean,11.5
+Lebanon,Asia,Mean,7.9
+Costa Rica,North America,Mean,8.4
+Iran (Islamic Republic of),Asia,Mean,8.2
+Venezuela (Bolivarian Republic of),South America,Mean,8.9
+Turkey,Asia,Mean,7.6
+Sri Lanka,Asia,Mean,10.8
+Mexico,North America,Mean,8.5
+Brazil,South America,Mean,7.7
+Georgia,Asia,Mean,12.1
+Saint Kitts and Nevis,North America,Mean,8.4
+Azerbaijan,Asia,Mean,11.2
+Grenada,North America,Mean,8.6
+Jordan,Asia,Mean,9.9
+The former Yugoslav Republic of Macedonia,Europe,Mean,9.3
+Ukraine,Europe,Mean,11.3
+Algeria,Africa,Mean,7.6
+Peru,South America,Mean,9
+Albania,Europe,Mean,9.3
+Armenia,Asia,Mean,10.9
+Bosnia and Herzegovina,Europe,Mean,8.3
+Ecuador,South America,Mean,7.6
+Saint Lucia,North America,Mean,9.3
+China,Asia,Mean,7.5
+Fiji,Oceania,Mean,9.9
+Mongolia,Asia,Mean,9.3
+Thailand,Asia,Mean,7.3
+Dominica,North America,Mean,7.9
+Libya,Africa,Mean,7.3
+Tunisia,Africa,Mean,6.8
+Colombia,North America,Mean,7.3
+Saint Vincent and the Grenadines,North America,Mean,8.6
+Jamaica,North America,Mean,9.7
+Tonga,Oceania,Mean,10.7
+Belize,North America,Mean,10.5
+Dominican Republic,North America,Mean,7.6
+Suriname,South America,Mean,7.7
+Maldives,Asia,Mean,5.8
+Samoa,Oceania,Mean,10.3
+Botswana,Africa,Mean,8.9
+Moldova (Republic of),Europe,Mean,11.2
+Egypt,Africa,Mean,6.6
+Turkmenistan,Asia,Mean,9.9
+Gabon,Africa,Mean,7.8
+Indonesia,Asia,Mean,7.6
+Paraguay,South America,Mean,7.7
+"Palestine, State of",Asia,Mean,8.9
+Uzbekistan,Asia,Mean,10.9
+Philippines,Asia,Mean,8.9
+El Salvador,North America,Mean,6.5
+South Africa,Africa,Mean,9.9
+Viet Nam,Asia,Mean,7.5
+Bolivia (Plurinational State of),South America,Mean,8.2
+Kyrgyzstan,Asia,Mean,10.6
+Iraq,Asia,Mean,6.4
+Cabo Verde,Africa,Mean,4.7
+Micronesia (Federated States of),Oceania,Mean,9.7
+Guyana,South America,Mean,8.5
+Nicaragua,North America,Mean,6
+Morocco,Africa,Mean,4.4
+Namibia,Africa,Mean,6.2
+Guatemala,North America,Mean,5.6
+Tajikistan,Asia,Mean,10.4
+India,Asia,Mean,5.4
+Honduras,North America,Mean,5.5
+Bhutan,Asia,Mean,3
+Timor-Leste,Asia,Mean,4.4
+Syrian Arab Republic,Asia,Mean,6.3
+Vanuatu,Oceania,Mean,6.8
+Congo,Africa,Mean,6.1
+Kiribati,Oceania,Mean,7.8
+Equatorial Guinea,Africa,Mean,5.5
+Zambia,Africa,Mean,6.6
+Ghana,Africa,Mean,7
+Lao People's Democratic Republic,Asia,Mean,5
+Bangladesh,Asia,Mean,5.1
+Cambodia,Asia,Mean,4.4
+Sao Tome and Principe,Africa,Mean,4.7
+Kenya,Africa,Mean,6.3
+Nepal,Asia,Mean,3.3
+Pakistan,Asia,Mean,4.7
+Myanmar,Asia,Mean,4.1
+Angola,Africa,Mean,4.7
+Swaziland,Africa,Mean,7.1
+Tanzania (United Republic of),Africa,Mean,5.1
+Nigeria,Africa,Mean,5.9
+Cameroon,Africa,Mean,6
+Madagascar,Africa,Mean,6
+Zimbabwe,Africa,Mean,7.3
+Mauritania,Africa,Mean,3.8
+Solomon Islands,Oceania,Mean,5
+Papua New Guinea,Oceania,Mean,4
+Comoros,Africa,Mean,4.6
+Yemen,Asia,Mean,2.6
+Lesotho,Africa,Mean,5.9
+Togo,Africa,Mean,4.5
+Haiti,North America,Mean,4.9
+Rwanda,Africa,Mean,3.7
+Uganda,Africa,Mean,5.4
+Benin,Africa,Mean,3.3
+Sudan,Africa,Mean,3.1
+Djibouti,Africa,Mean,3.8
+South Sudan,Africa,Mean,5.4
+Senegal,Africa,Mean,2.5
+Afghanistan,Asia,Mean,3.2
+CÃ´te d'Ivoire,Africa,Mean,4.3
+Malawi,Africa,Mean,4.3
+Ethiopia,Africa,Mean,2.4
+Gambia,Africa,Mean,2.8
+Congo (Democratic Republic of the),Africa,Mean,6
+Liberia,Africa,Mean,4.1
+Guinea-Bissau,Africa,Mean,2.8
+Mali,Africa,Mean,2
+Mozambique,Africa,Mean,3.2
+Sierra Leone,Africa,Mean,3.1
+Guinea,Africa,Mean,2.4
+Burkina Faso,Africa,Mean,1.4
+Burundi,Africa,Mean,2.7
+Chad,Africa,Mean,1.9
+Eritrea,Africa,Mean,3.9
+Central African Republic,Africa,Mean,4.2
+Niger,Africa,Mean,1.5
+Norway,Europe,Expected,17.5
+Australia,Oceania,Expected,20.2
+Switzerland,Europe,Expected,15.8
+Denmark,North America,Expected,18.7
+Netherlands,North America,Expected,17.9
+Germany,Europe,Expected,16.5
+Ireland,Europe,Expected,18.6
+United States,North America,Expected,16.5
+Canada,North America,Expected,15.9
+New Zealand,Oceania,Expected,19.2
+Singapore,Asia,Expected,15.4
+"Hong Kong, China (SAR)",Asia,Expected,15.6
+Liechtenstein,Europe,Expected,15
+Sweden,Europe,Expected,15.8
+United Kingdom,Europe,Expected,16.2
+Iceland,Europe,Expected,19
+Korea (Republic of),Asia,Expected,16.9
+Israel,Asia,Expected,16
+Luxembourg,Europe,Expected,13.9
+Japan,Asia,Expected,15.3
+Belgium,Europe,Expected,16.3
+France,Europe,Expected,16
+Austria,Europe,Expected,15.7
+Finland,Europe,Expected,17.1
+Slovenia,Europe,Expected,16.8
+Spain,Europe,Expected,17.3
+Italy,Europe,Expected,16
+Czech Republic,Europe,Expected,16.4
+Greece,Europe,Expected,17.6
+Estonia,Europe,Expected,16.5
+Brunei Darussalam,Asia,Expected,14.5
+Cyprus,Europe,Expected,14
+Qatar,Asia,Expected,13.8
+Andorra,Europe,Expected,13.5
+Slovakia,Europe,Expected,15.1
+Poland,Europe,Expected,15.5
+Lithuania,Europe,Expected,16.4
+Malta,Europe,Expected,14.4
+Saudi Arabia,Asia,Expected,16.3
+Argentina,South America,Expected,17.9
+United Arab Emirates,Asia,Expected,13.3
+Chile,South America,Expected,15.2
+Portugal,Europe,Expected,16.3
+Hungary,Europe,Expected,15.4
+Bahrain,Asia,Expected,14.4
+Latvia,Europe,Expected,15.2
+Croatia,Europe,Expected,14.8
+Kuwait,Asia,Expected,14.7
+Montenegro,Europe,Expected,15.2
+Belarus,Europe,Expected,15.7
+Russian Federation,Asia,Expected,14.7
+Oman,Asia,Expected,13.6
+Romania,Europe,Expected,14.2
+Uruguay,South America,Expected,15.5
+Bahamas,North America,Expected,12.6
+Kazakhstan,Asia,Expected,15
+Barbados,North America,Expected,15.4
+Antigua and Barbuda,North America,Expected,14
+Bulgaria,Europe,Expected,14.4
+Palau,Oceania,Expected,13.7
+Panama,North America,Expected,13.3
+Malaysia,Asia,Expected,12.7
+Mauritius,Africa,Expected,15.6
+Seychelles,Africa,Expected,13.4
+Trinidad and Tobago,North America,Expected,12.3
+Serbia,Europe,Expected,14.4
+Cuba,North America,Expected,13.8
+Lebanon,Asia,Expected,13.8
+Costa Rica,North America,Expected,13.9
+Iran (Islamic Republic of),Asia,Expected,15.1
+Venezuela (Bolivarian Republic of),South America,Expected,14.2
+Turkey,Asia,Expected,14.5
+Sri Lanka,Asia,Expected,13.7
+Mexico,North America,Expected,13.1
+Brazil,South America,Expected,15.2
+Georgia,Asia,Expected,13.8
+Saint Kitts and Nevis,North America,Expected,12.9
+Azerbaijan,Asia,Expected,11.9
+Grenada,North America,Expected,15.8
+Jordan,Asia,Expected,13.5
+The former Yugoslav Republic of Macedonia,Europe,Expected,13.4
+Ukraine,Europe,Expected,15.1
+Algeria,Africa,Expected,14
+Peru,South America,Expected,13.1
+Albania,Europe,Expected,11.8
+Armenia,Asia,Expected,12.3
+Bosnia and Herzegovina,Europe,Expected,13.6
+Ecuador,South America,Expected,14.2
+Saint Lucia,North America,Expected,12.6
+China,Asia,Expected,13.1
+Fiji,Oceania,Expected,15.7
+Mongolia,Asia,Expected,14.6
+Thailand,Asia,Expected,13.5
+Dominica,North America,Expected,12.7
+Libya,Africa,Expected,14
+Tunisia,Africa,Expected,14.6
+Colombia,North America,Expected,13.5
+Saint Vincent and the Grenadines,North America,Expected,13.4
+Jamaica,North America,Expected,12.4
+Tonga,Oceania,Expected,14.7
+Belize,North America,Expected,13.6
+Dominican Republic,North America,Expected,13.1
+Suriname,South America,Expected,12.7
+Maldives,Asia,Expected,13
+Samoa,Oceania,Expected,12.9
+Botswana,Africa,Expected,12.5
+Moldova (Republic of),Europe,Expected,11.9
+Egypt,Africa,Expected,13.5
+Turkmenistan,Asia,Expected,10.8
+Gabon,Africa,Expected,12.5
+Indonesia,Asia,Expected,13
+Paraguay,South America,Expected,11.9
+"Palestine, State of",Asia,Expected,13
+Uzbekistan,Asia,Expected,11.5
+Philippines,Asia,Expected,11.3
+El Salvador,North America,Expected,12.3
+South Africa,Africa,Expected,13.6
+Viet Nam,Asia,Expected,11.9
+Bolivia (Plurinational State of),South America,Expected,13.2
+Kyrgyzstan,Asia,Expected,12.5
+Iraq,Asia,Expected,10.1
+Cabo Verde,Africa,Expected,13.5
+Micronesia (Federated States of),Oceania,Expected,11.7
+Guyana,South America,Expected,10.3
+Nicaragua,North America,Expected,11.5
+Morocco,Africa,Expected,11.6
+Namibia,Africa,Expected,11.3
+Guatemala,North America,Expected,10.7
+Tajikistan,Asia,Expected,11.2
+India,Asia,Expected,11.7
+Honduras,North America,Expected,11.1
+Bhutan,Asia,Expected,12.6
+Timor-Leste,Asia,Expected,11.7
+Syrian Arab Republic,Asia,Expected,12.3
+Vanuatu,Oceania,Expected,10.6
+Congo,Africa,Expected,11.1
+Kiribati,Oceania,Expected,12.3
+Equatorial Guinea,Africa,Expected,9
+Zambia,Africa,Expected,13.5
+Ghana,Africa,Expected,11.5
+Lao People's Democratic Republic,Asia,Expected,10.6
+Bangladesh,Asia,Expected,10
+Cambodia,Asia,Expected,10.9
+Sao Tome and Principe,Africa,Expected,11.3
+Kenya,Africa,Expected,11
+Nepal,Asia,Expected,12.4
+Pakistan,Asia,Expected,7.8
+Myanmar,Asia,Expected,8.6
+Angola,Africa,Expected,11.4
+Swaziland,Africa,Expected,11.3
+Tanzania (United Republic of),Africa,Expected,9.2
+Nigeria,Africa,Expected,9
+Cameroon,Africa,Expected,10.4
+Madagascar,Africa,Expected,10.3
+Zimbabwe,Africa,Expected,10.9
+Mauritania,Africa,Expected,8.5
+Solomon Islands,Oceania,Expected,9.2
+Papua New Guinea,Oceania,Expected,9.9
+Comoros,Africa,Expected,11.5
+Yemen,Asia,Expected,9.2
+Lesotho,Africa,Expected,11.1
+Togo,Africa,Expected,12.2
+Haiti,North America,Expected,8.7
+Rwanda,Africa,Expected,10.3
+Uganda,Africa,Expected,9.8
+Benin,Africa,Expected,11.1
+Sudan,Africa,Expected,7
+Djibouti,Africa,Expected,6.4
+South Sudan,Africa,Expected,7.6
+Senegal,Africa,Expected,7.9
+Afghanistan,Asia,Expected,9.3
+CÃ´te d'Ivoire,Africa,Expected,8.9
+Malawi,Africa,Expected,10.8
+Ethiopia,Africa,Expected,8.5
+Gambia,Africa,Expected,8.8
+Congo (Democratic Republic of the),Africa,Expected,9.8
+Liberia,Africa,Expected,9.5
+Guinea-Bissau,Africa,Expected,9
+Mali,Africa,Expected,8.4
+Mozambique,Africa,Expected,9.3
+Sierra Leone,Africa,Expected,8.6
+Guinea,Africa,Expected,8.7
+Burkina Faso,Africa,Expected,7.8
+Burundi,Africa,Expected,10.1
+Chad,Africa,Expected,7.4
+Eritrea,Africa,Expected,4.1
+Central African Republic,Africa,Expected,7.2
+Niger,Africa,Expected,5.4
