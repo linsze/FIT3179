@@ -1,26 +1,31 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "background": "#ecd9c6",
-  "padding": 20,
-  "data": {
-    "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/GNI.csv"
+  "background":  "#ecd9c6",
+  "title": {
+    "text": "Average Gross National Income (GNI)",
+    "anchor": "middle"
   },
+  "padding": 20,
+  "data": { "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/GNI.csv"},
   "transform": [
     {"filter": "datum['Estimated Gross National Income per Capita'] > 0"}
   ],
   "spacing": 0,
   "hconcat": [
     {
-      "transform": [{"filter": {"field": "Gender", "equal": "Male"}}],
+      "transform": [{
+          "filter": {"field": "Gender", "equal": "Male"}
+      }],
       "title": "Male",
       "layer": [
         {
           "mark": "bar",
           "encoding": {
-            "y": {"field": "Continent", "axis": null},
+            "y": {
+              "field": "Continent", "axis": null
+            },
             "x": {
-              "aggregate": "mean",
-              "field": "Estimated Gross National Income per Capita",
+              "aggregate": "mean", "field": "Estimated Gross National Income per Capita",
               "title": "Estimated GNI",
               "axis": null,
               "sort": "descending",
@@ -43,53 +48,60 @@
             "fontStyle": "italic"
           },
           "encoding": {
-            "y": {"field": "Continent", "axis": null},
+            "y": {
+              "field": "Continent", "axis": null
+            },
             "text": {
               "aggregate": "mean",
               "field": "Estimated Gross National Income per Capita",
-              "type": "quantitative",
+              "type": "quantitative", 
               "format": ".1s"
             },
             "color": {"value": "black"}
           }
         }
       ]
-    },
+    }, 
     {
-      "width": 100,
+      "width": 150,
       "view": {"stroke": null},
       "mark": {
         "type": "text",
         "align": "center",
-        "fontSize": 12,
-        "fontWeight": 200
+        "fontSize": 14,
+        "color": "#817e7e"
       },
       "encoding": {
         "y": {"field": "Continent", "type": "nominal", "axis": null},
-        "text": {"field": "Continent", "type": "nominal"}
+        "text": {
+          "field": "Continent", 
+          "type": "nominal"
+        }
       }
-    },
+    }, 
     {
-      "transform": [{"filter": {"field": "Gender", "equal": "Female"}}],
+      "transform": [{
+        "filter": {"field": "Gender", "equal": "Female"}
+      }],
       "title": "Female",
       "layer": [
         {
           "mark": "bar",
           "encoding": {
             "y": {
-              "field": "Continent",
-              "title": null,
-              "axis": null,
-              "sort": "descending"
+              "field": "Continent", "title": null,
+              "axis": null, "sort": "descending"
             },
             "x": {
-              "aggregate": "mean",
-              "field": "Estimated Gross National Income per Capita",
+              "aggregate": "mean", "field": "Estimated Gross National Income per Capita",
               "title": "Estimated GNI",
               "axis": null,
               "scale": {"domain": [0, 40000]}
             },
-            "color": {"field": "Gender", "legend": null}
+            "color": {
+              "field": "Gender",
+              "legend": null
+            }
           }
         },
         {
@@ -102,11 +114,13 @@
             "fontStyle": "italic"
           },
           "encoding": {
-            "y": {"field": "Continent", "axis": null},
+            "y": {
+              "field": "Continent", "axis": null
+            },
             "text": {
               "aggregate": "mean",
               "field": "Estimated Gross National Income per Capita",
-              "type": "quantitative",
+              "type": "quantitative", 
               "format": ".1s"
             },
             "color": {"value": "black"}
@@ -115,5 +129,10 @@
       ]
     }
   ],
-  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+  "config": {
+    "view": {"stroke": null},
+    "axis": {
+      "grid": false
+    }
+  }
 }
