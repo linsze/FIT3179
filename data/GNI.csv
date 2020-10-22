@@ -1,0 +1,377 @@
+﻿Country,Continent,Gender,Estimated Gross National Income per Capita
+Norway,Europe,Female,57140
+Australia,Oceania,Female,33688
+Switzerland,Europe,Female,44132
+Denmark,North America,Female,36439
+Netherlands,North America,Female,29500
+Germany,Europe,Female,34886
+Ireland,Europe,Female,30104
+United States,North America,Female,43054
+Canada,North America,Female,33587
+New Zealand,Oceania,Female,24309
+Singapore,Asia,Female,59994
+"Hong Kong, China (SAR)",Asia,Female,38060
+Liechtenstein,Europe,Female,0
+Sweden,Europe,Female,40222
+United Kingdom,Europe,Female,27259
+Iceland,Europe,Female,28792
+Korea (Republic of),Asia,Female,21896
+Israel,Asia,Female,22451
+Luxembourg,Europe,Female,47723
+Japan,Asia,Female,24975
+Belgium,Europe,Female,31879
+France,Europe,Female,31073
+Austria,Europe,Female,29598
+Finland,Europe,Female,31644
+Slovenia,Europe,Female,22180
+Spain,Europe,Female,24059
+Italy,Europe,Female,22526
+Czech Republic,Europe,Female,19929
+Greece,Europe,Female,17288
+Estonia,Europe,Female,20854
+Brunei Darussalam,Asia,Female,54228
+Cyprus,Europe,Female,22613
+Qatar,Asia,Female,55123
+Andorra,Europe,Female,0
+Slovakia,Europe,Female,19903
+Poland,Europe,Female,18423
+Lithuania,Europe,Female,20955
+Malta,Europe,Female,16435
+Saudi Arabia,Asia,Female,20094
+Argentina,South America,Female,14202
+United Arab Emirates,Asia,Female,22391
+Chile,South America,Female,14732
+Portugal,Europe,Female,21259
+Hungary,Europe,Female,17443
+Bahrain,Asia,Female,20038
+Latvia,Europe,Female,18437
+Croatia,Europe,Female,16200
+Kuwait,Asia,Female,42292
+Montenegro,Europe,Female,11106
+Belarus,Europe,Female,12922
+Russian Federation,Asia,Female,17269
+Oman,Asia,Female,14709
+Romania,Europe,Female,15250
+Uruguay,South America,Female,14721
+Bahamas,North America,Female,17868
+Kazakhstan,Asia,Female,15408
+Barbados,North America,Female,10245
+Antigua and Barbuda,North America,Female,0
+Bulgaria,Europe,Female,12448
+Palau,Oceania,Female,0
+Panama,North America,Female,13699
+Malaysia,Asia,Female,15635
+Mauritius,Africa,Female,10541
+Seychelles,Africa,Female,0
+Trinidad and Tobago,North America,Female,19669
+Serbia,Europe,Female,9697
+Cuba,North America,Female,4912
+Lebanon,Asia,Female,7334
+Costa Rica,North America,Female,9680
+Iran (Islamic Republic of),Asia,Female,4828
+Venezuela (Bolivarian Republic of),South America,Female,12458
+Turkey,Asia,Female,10024
+Sri Lanka,Asia,Female,5452
+Mexico,North America,Female,10233
+Brazil,South America,Female,11393
+Georgia,Asia,Female,4887
+Saint Kitts and Nevis,North America,Female,0
+Azerbaijan,Asia,Female,10120
+Grenada,North America,Female,0
+Jordan,Asia,Female,3587
+The former Yugoslav Republic of Macedonia,Europe,Female,8796
+Ukraine,Europe,Female,6518
+Algeria,Africa,Female,3898
+Peru,South America,Female,8040
+Albania,Europe,Female,7217
+Armenia,Asia,Female,6042
+Bosnia and Herzegovina,Europe,Female,6514
+Ecuador,South America,Female,8487
+Saint Lucia,North America,Female,8018
+China,Asia,Female,10128
+Fiji,Oceania,Female,4274
+Mongolia,Asia,Female,9029
+Thailand,Asia,Female,11820
+Dominica,North America,Female,0
+Libya,Africa,Female,7427
+Tunisia,Africa,Female,4748
+Colombia,North America,Female,9785
+Saint Vincent and the Grenadines,North America,Female,7283
+Jamaica,North America,Female,5820
+Tonga,Oceania,Female,3796
+Belize,North America,Female,5034
+Dominican Republic,North America,Female,8860
+Suriname,South America,Female,10241
+Maldives,Asia,Female,8531
+Samoa,Oceania,Female,3416
+Botswana,Africa,Female,15179
+Moldova (Republic of),Europe,Female,4599
+Egypt,Africa,Female,4928
+Turkmenistan,Asia,Female,8725
+Gabon,Africa,Female,13527
+Indonesia,Asia,Female,6485
+Paraguay,South America,Female,5576
+"Palestine, State of",Asia,Female,1580
+Uzbekistan,Asia,Female,3811
+Philippines,Asia,Female,5382
+El Salvador,North America,Female,5497
+South Africa,Africa,Female,8713
+Viet Nam,Asia,Female,4624
+Bolivia (Plurinational State of),South America,Female,4383
+Kyrgyzstan,Asia,Female,2122
+Iraq,Asia,Female,4279
+Cabo Verde,Africa,Female,4098
+Micronesia (Federated States of),Oceania,Female,0
+Guyana,South America,Female,4164
+Nicaragua,North America,Female,2967
+Morocco,Africa,Female,3222
+Namibia,Africa,Female,7672
+Guatemala,North America,Female,5021
+Tajikistan,Asia,Female,2014
+India,Asia,Female,2116
+Honduras,North America,Female,2365
+Bhutan,Asia,Female,5733
+Timor-Leste,Asia,Female,3122
+Syrian Arab Republic,Asia,Female,864
+Vanuatu,Oceania,Female,2141
+Congo,Africa,Female,5165
+Kiribati,Oceania,Female,0
+Equatorial Guinea,Africa,Female,17073
+Zambia,Africa,Female,3019
+Ghana,Africa,Female,3200
+Lao People's Democratic Republic,Asia,Female,4086
+Bangladesh,Asia,Female,2278
+Cambodia,Asia,Female,2526
+Sao Tome and Principe,Africa,Female,1886
+Kenya,Africa,Female,2255
+Nepal,Asia,Female,1956
+Pakistan,Asia,Female,1450
+Myanmar,Asia,Female,3873
+Angola,Africa,Female,5497
+Swaziland,Africa,Female,3894
+Tanzania (United Republic of),Africa,Female,2320
+Nigeria,Africa,Female,4052
+Cameroon,Africa,Female,2266
+Madagascar,Africa,Female,1098
+Zimbabwe,Africa,Female,1387
+Mauritania,Africa,Female,1625
+Solomon Islands,Oceania,Female,1046
+Papua New Guinea,Oceania,Female,2145
+Comoros,Africa,Female,778
+Yemen,Asia,Female,1595
+Lesotho,Africa,Female,2613
+Togo,Africa,Female,1084
+Haiti,North America,Female,1379
+Rwanda,Africa,Female,1312
+Uganda,Africa,Female,1226
+Benin,Africa,Female,1493
+Sudan,Africa,Female,1882
+Djibouti,Africa,Female,2019
+South Sudan,Africa,Female,0
+Senegal,Africa,Female,1657
+Afghanistan,Asia,Female,506
+CÃ´te d'Ivoire,Africa,Female,2146
+Malawi,Africa,Female,679
+Ethiopia,Africa,Female,1090
+Gambia,Africa,Female,1267
+Congo (Democratic Republic of the),Africa,Female,597
+Liberia,Africa,Female,678
+Guinea-Bissau,Africa,Female,1135
+Mali,Africa,Female,961
+Mozambique,Africa,Female,1040
+Sierra Leone,Africa,Female,1582
+Guinea,Africa,Female,877
+Burkina Faso,Africa,Female,1325
+Burundi,Africa,Female,693
+Chad,Africa,Female,1657
+Eritrea,Africa,Female,971
+Central African Republic,Africa,Female,476
+Niger,Africa,Female,491
+Norway,Europe,Male,72825
+Australia,Oceania,Male,50914
+Switzerland,Europe,Male,69077
+Denmark,North America,Male,51727
+Netherlands,North America,Male,61641
+Germany,Europe,Male,53290
+Ireland,Europe,Male,49166
+United States,North America,Male,63158
+Canada,North America,Male,50853
+New Zealand,Oceania,Male,41372
+Singapore,Asia,Male,93699
+"Hong Kong, China (SAR)",Asia,Male,72052
+Liechtenstein,Europe,Male,0
+Sweden,Europe,Male,51084
+United Kingdom,Europe,Male,51628
+Iceland,Europe,Male,41486
+Korea (Republic of),Asia,Male,46018
+Israel,Asia,Male,39064
+Luxembourg,Europe,Male,69800
+Japan,Asia,Male,49541
+Belgium,Europe,Male,50845
+France,Europe,Male,45497
+Austria,Europe,Male,58826
+Finland,Europe,Male,45994
+Slovenia,Europe,Male,33593
+Spain,Europe,Male,40221
+Italy,Europe,Male,44148
+Czech Republic,Europe,Male,33604
+Greece,Europe,Male,31952
+Estonia,Europe,Male,30254
+Brunei Darussalam,Asia,Male,90437
+Cyprus,Europe,Male,34400
+Qatar,Asia,Male,143979
+Andorra,Europe,Male,0
+Slovakia,Europe,Male,32122
+Poland,Europe,Male,28271
+Lithuania,Europe,Male,28656
+Malta,Europe,Male,39432
+Saudi Arabia,Asia,Male,77044
+Argentina,South America,Male,30237
+United Arab Emirates,Asia,Male,77300
+Chile,South America,Male,27992
+Portugal,Europe,Male,30543
+Hungary,Europe,Male,28960
+Bahrain,Asia,Male,49890
+Latvia,Europe,Male,26845
+Croatia,Europe,Male,22853
+Kuwait,Asia,Male,111988
+Montenegro,Europe,Male,18094
+Belarus,Europe,Male,21010
+Russian Federation,Asia,Male,28287
+Oman,Asia,Male,46400
+Romania,Europe,Male,21117
+Uruguay,South America,Male,24166
+Bahamas,North America,Male,24957
+Kazakhstan,Asia,Male,26746
+Barbados,North America,Male,14739
+Antigua and Barbuda,North America,Male,0
+Bulgaria,Europe,Male,18926
+Palau,Oceania,Male,0
+Panama,North America,Male,22597
+Malaysia,Asia,Male,30320
+Mauritius,Africa,Male,24581
+Seychelles,Africa,Male,0
+Trinidad and Tobago,North America,Male,32656
+Serbia,Europe,Male,14799
+Cuba,North America,Male,9665
+Lebanon,Asia,Male,25391
+Costa Rica,North America,Male,17033
+Iran (Islamic Republic of),Asia,Male,25924
+Venezuela (Bolivarian Republic of),South America,Male,19840
+Turkey,Asia,Male,27645
+Sri Lanka,Asia,Male,14307
+Mexico,North America,Male,22252
+Brazil,South America,Male,19084
+Georgia,Asia,Male,9718
+Saint Kitts and Nevis,North America,Male,0
+Azerbaijan,Asia,Male,22814
+Grenada,North America,Male,0
+Jordan,Asia,Male,18831
+The former Yugoslav Republic of Macedonia,Europe,Male,14754
+Ukraine,Europe,Male,10120
+Algeria,Africa,Male,22009
+Peru,South America,Male,13977
+Albania,Europe,Male,12655
+Armenia,Asia,Male,10089
+Bosnia and Herzegovina,Europe,Male,12912
+Ecuador,South America,Male,12723
+Saint Lucia,North America,Male,11576
+China,Asia,Male,14795
+Fiji,Oceania,Male,10592
+Mongolia,Asia,Male,12462
+Thailand,Asia,Male,14888
+Dominica,North America,Male,0
+Libya,Africa,Male,22392
+Tunisia,Africa,Male,16159
+Colombia,North America,Male,14372
+Saint Vincent and the Grenadines,North America,Male,12541
+Jamaica,North America,Male,9059
+Tonga,Oceania,Male,6336
+Belize,North America,Male,10198
+Dominican Republic,North America,Male,14903
+Suriname,South America,Male,20970
+Maldives,Asia,Male,16073
+Samoa,Oceania,Male,7124
+Botswana,Africa,Male,18096
+Moldova (Republic of),Europe,Male,5915
+Egypt,Africa,Male,16049
+Turkmenistan,Asia,Male,17552
+Gabon,Africa,Male,19177
+Indonesia,Asia,Male,13052
+Paraguay,South America,Male,9678
+"Palestine, State of",Asia,Male,7726
+Uzbekistan,Asia,Male,7342
+Philippines,Asia,Male,10439
+El Salvador,North America,Male,9406
+South Africa,Africa,Male,15737
+Viet Nam,Asia,Male,5570
+Bolivia (Plurinational State of),South America,Male,7140
+Kyrgyzstan,Asia,Male,3992
+Iraq,Asia,Male,23515
+Cabo Verde,Africa,Male,8105
+Micronesia (Federated States of),Oceania,Male,0
+Guyana,South America,Male,8804
+Nicaragua,North America,Male,5979
+Morocco,Africa,Male,10573
+Namibia,Africa,Male,11267
+Guatemala,North America,Male,8934
+Tajikistan,Asia,Male,3017
+India,Asia,Male,8656
+Honduras,North America,Male,5508
+Bhutan,Asia,Male,8418
+Timor-Leste,Asia,Male,7530
+Syrian Arab Republic,Asia,Male,4523
+Vanuatu,Oceania,Male,3445
+Congo,Africa,Male,6859
+Kiribati,Oceania,Male,0
+Equatorial Guinea,Africa,Male,24850
+Zambia,Africa,Male,4452
+Ghana,Africa,Male,4515
+Lao People's Democratic Republic,Asia,Male,5279
+Bangladesh,Asia,Male,4083
+Cambodia,Asia,Male,3393
+Sao Tome and Principe,Africa,Male,3976
+Kenya,Africa,Male,3270
+Nepal,Asia,Male,2690
+Pakistan,Asia,Male,8100
+Myanmar,Asia,Male,5386
+Angola,Africa,Male,8169
+Swaziland,Africa,Male,7235
+Tanzania (United Republic of),Africa,Male,2502
+Nigeria,Africa,Male,6585
+Cameroon,Africa,Male,3341
+Madagascar,Africa,Male,1560
+Zimbabwe,Africa,Male,1850
+Mauritania,Africa,Male,5468
+Solomon Islands,Oceania,Male,2019
+Papua New Guinea,Oceania,Male,2768
+Comoros,Africa,Male,2123
+Yemen,Asia,Male,5412
+Lesotho,Africa,Male,4017
+Togo,Africa,Male,1376
+Haiti,North America,Male,1966
+Rwanda,Africa,Male,1612
+Uganda,Africa,Male,1997
+Benin,Africa,Male,2043
+Sudan,Africa,Male,5722
+Djibouti,Africa,Male,4522
+South Sudan,Africa,Male,0
+Senegal,Africa,Male,2739
+Afghanistan,Asia,Male,3227
+CÃ´te d'Ivoire,Africa,Male,4157
+Malawi,Africa,Male,815
+Ethiopia,Africa,Male,1765
+Gambia,Africa,Male,1753
+Congo (Democratic Republic of the),Africa,Male,765
+Liberia,Africa,Male,930
+Guinea-Bissau,Africa,Male,1593
+Mali,Africa,Male,2195
+Mozambique,Africa,Male,1210
+Sierra Leone,Africa,Male,1981
+Guinea,Africa,Male,1314
+Burkina Faso,Africa,Male,1859
+Burundi,Africa,Male,825
+Chad,Africa,Male,2513
+Eritrea,Africa,Male,1290
+Central African Republic,Africa,Male,689
+Niger,Africa,Male,1319
