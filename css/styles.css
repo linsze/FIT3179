@@ -19,9 +19,9 @@ body {
     overflow: hidden;
     position: relative;
     float: left;
-    height: 350px;
+    height: 320px;
     width: 25%;
-    margin: 10px;
+    padding-left: 20px;
 }
 
 .first_row_column {
@@ -30,14 +30,14 @@ body {
     height: 330px;
     width: 10%;
     float: right;
+    padding-right: 10px;
 }
 
 #choropleth_map {
-    overflow: hidden;
+    overflow: visible;
     width: 60%;
     float: left;
-    padding-inline-end: 40px;
-    padding-block-end: 20px;
+    vertical-align: text-top;
 }
 
 .icon_container {
