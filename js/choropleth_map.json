@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 700,
-  "height": 360,
+  "width": 750,
+  "height": 350,
   "background": "#ecd9c6",
   "data": {
     "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/js/ne_110m.topojson.json",
@@ -44,5 +44,9 @@
       }
     ]
   },
-  "config": {}
+  "config": {
+    "legend": {
+      "orient": "left"
+    }
+  }
 }
