@@ -46,7 +46,7 @@
   },
   "config": {
     "legend": {
-      "orient": "left"
+      "orient": "bottom-left"
     }
   }
 }
