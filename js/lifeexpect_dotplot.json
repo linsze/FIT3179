@@ -84,7 +84,8 @@
   ],
   "config": {
     "legend": {
-      "orient": "left"
+      "orient": "left",
+      "padding": 20
     }
   }
 }

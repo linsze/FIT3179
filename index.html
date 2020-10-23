@@ -26,56 +26,74 @@
 
     <div class="first_row_textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
       <h2>Human Development Index (HDI)</h2>
-      <p>HDI was developed as an alternative to simple money metrics, made up of basic ingredients of human well-being: <b>health</b>, 
-        <b>education</b> and <b>income</b>.</p>
+      <p>HDI was developed as an alternative to simple money metrics, made up of basic ingredients 
+        of human well-being: <b>health</b>, <b>education</b> and <b>income</b>.</p>
     </div>
 
     <div class="first_row_column pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
       <div class="icon_container">
         <img src="data/life_expectancy_logo.png" alt="Health" class="icon">
         <div class="icon_middle">
-          <div class="icon_middle_text">Health</div>
+          <a href="#lifeexpect_dotplot">
+            <div class="icon_middle_text">Health</div>
+          </a>
         </div>
       </div>
       <div class="icon_container">
-        <img src="data/education_logo.png" alt="Knowledge" class="icon">
+        <img src="data/education_logo.png" alt="Education" class="icon">
         <div class="icon_middle">
-          <div class="icon_middle_text">Knowledge</div>
+          <a href="#">
+            <div class="icon_middle_text">Education</div>
+          </a>
         </div>
       </div>
       <div class="icon_container">
-        <img src="data/income_logo.png" alt="Living Standard" class="icon">
+        <img src="data/income_logo.png" alt="Income" class="icon">
         <div class="icon_middle">
-          <div class="icon_middle_text">Living Standard</div>
+          <a href="#gni_horizontal_bar">
+            <div class="icon_middle_text">Income</div>
+          </a>
         </div>
       </div>
     </div>
     
-    <!--Second row with life expectancy vis-->
+    <!--Second row with life expectancy vs gni vis-->
     <div class="visualization pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="life_vs_gni_bubble">
     </div>
 
     <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
       <h2>Capabilities</h2>
-      <p>Capabilities are the equipment one has to pursue a life of value. Basic capabilities valued by virtually everyone include good <b>health</b>, 
-        access to <b>knowledge</b>, and a decent material <b>standard of living</b>.</p>
+      <p>Capabilities are the equipment one has to pursue a life of value. Basic capabilities 
+        valued by virtually everyone include good <b>health</b>, access to <b>knowledge</b>, 
+        and a decent material <b>standard of living</b>.</p>
       <p>This concept is used for analyzing well-being and understanding development problems.</p>
     </div>
 
+    <!--Third row with Health vis-->
     <div class="visualization pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="lifeexpect_dotplot">
     </div>
 
-    <!--Third row with GNI vis-->
-    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-      <div id="gni_horizontal_bar"></div>
+    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+      <h2>A Long and Healthy Life</h2>
+      <p>The <b>most valuable capability</b> people possess is to <b>be alive</b>. <b>Life 
+        expectancy at birth</b> stands as a proxy for this capability. It is the average 
+        number of years a baby born today is expected to live if current mortality patterns 
+        continue throughout his or her lifetime.</p>
+    </div>
+
+    <!--Forth row with Income vis-->
+    <div class="visualization pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="gni_horizontal_bar">
+    </div>
+
+    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+      <h2>A Decent Standard of Living</h2>
+      <p><b>Income</b> is essential to meeting basic needs like food and shelter—and to moving 
+        beyond these necessities to a life of genuine choice and freedom. It enables valuable 
+        options and alternatives, and its absence can limit life chances and restrict access 
+        to many opportunities.</p>
     </div>
 
   </div> 
-  <!-- <div class="pure-g center">
-    <div class="pure-u-1">
-      <div id="choropleth_map"></div>
-    </div>
-  </div>  -->
 
 <script type="text/javascript">
   var specVis1 = "https://linsze.github.io/FIT3179/js/choropleth_map.json";
