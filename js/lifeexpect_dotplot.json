@@ -82,5 +82,9 @@
       }
     }
   ],
-  "config": {}
+  "config": {
+    "legend": {
+      "orient": "left"
+    }
+  }
 }

@@ -15,11 +15,11 @@ body {
     text-align: center;
 }
 
-.textbox {
+.first_row_textbox {
     overflow: hidden;
     position: relative;
     float: left;
-    height: 350px;
+    height: auto;
     width: 25%;
     padding-left: 20px;
 }
@@ -27,7 +27,7 @@ body {
 .first_row_column {
     overflow: hidden;
     position: relative;
-    height: 330px;
+    height: auto;
     width: 10%;
     float: right;
     padding-right: 10px;
@@ -37,6 +37,7 @@ body {
     overflow: visible;
     width: 60%;
     float: left;
+    vertical-align: text-top;
 }
 
 .icon_container {
@@ -84,7 +85,21 @@ body {
     text-align: center;
 }
 
-#life_vs_gni_bubble {
+.textbox {
+    position: relative;
+    float: right;
+    height: 350px;
+    width: 36%;
+    padding-right: 20px;
+}
+
+.visualization {
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 60%;
     float: left;
+}
+
+#lifeexpect_dotplot {
+    padding-left: 40px;
 }
