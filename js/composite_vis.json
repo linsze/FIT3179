@@ -8,22 +8,10 @@
       "bind": {
         "input": "select",
         "options": [
-          null,
-          "Africa",
-          "Asia",
-          "Europe",
-          "North America",
-          "Oceania",
-          "South America"
+          null, "Africa", "Asia", "Europe", "North America", "Oceania", "South America"
         ],
         "labels": [
-          "All",
-          "Africa",
-          "Asia",
-          "Europe",
-          "North America",
-          "Oceania",
-          "South America"
+        "All", "Africa", "Asia", "Europe", "North America", "Oceania", "South America"
         ],
         "name": "Continent: "
       }
@@ -198,11 +186,7 @@
         {"filter": {"field": "Gender", "oneOf": ["Male", "Female"]}},
         {
           "aggregate": [
-            {
-              "op": "mean",
-              "field": "Life Expectancy at Birth",
-              "as": "Mean_life"
-            }
+            {"op": "mean", "field": "Life Expectancy at Birth", "as": "Mean_life"}
           ],
           "groupby": ["Continent", "Gender"]
         }
@@ -218,12 +202,7 @@
         "y": {
           "field": "Continent",
           "type": "nominal",
-          "axis": {
-            "offset": 5,
-            "ticks": false,
-            "minExtent": 70,
-            "domain": false
-          }
+          "axis": {"offset": 5, "ticks": false, "minExtent": 70, "domain": false}
         },
         "opacity": {
           "condition": {
@@ -273,11 +252,7 @@
             "fontStyle": "italic"
           },
           "encoding": {
-            "text": {
-              "field": "Mean_life",
-              "type": "quantitative",
-              "format": ".1f"
-            },
+            "text": {"field": "Mean_life", "type": "quantitative", "format": ".1f"},
             "color": {"value": "black"}
           }
         }
@@ -288,26 +263,27 @@
         "text": "Average Gross National Income (GNI)",
         "anchor": "middle"
       },
-      "data": {
-        "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/GNI.csv"
-      },
+      "data": { "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/GNI.csv"},
       "transform": [
         {"filter": "datum['Estimated Gross National Income per Capita'] > 0"}
       ],
       "hconcat": [
         {
-          "width": 160,
+          "width": 150,
           "height": 150,
-          "transform": [{"filter": {"field": "Gender", "equal": "Male"}}],
+          "transform": [{
+              "filter": {"field": "Gender", "equal": "Male"}
+          }],
           "title": "Male",
           "layer": [
             {
               "mark": "bar",
               "encoding": {
-                "y": {"field": "Continent", "axis": null},
+                "y": {
+                  "field": "Continent", "axis": null
+                },
                 "x": {
-                  "aggregate": "mean",
-                  "field": "Estimated Gross National Income per Capita",
+                  "aggregate": "mean", "field": "Estimated Gross National Income per Capita",
                   "title": "Estimated GNI",
                   "axis": null,
                   "sort": "descending",
@@ -337,11 +313,13 @@
                 "fontStyle": "italic"
               },
               "encoding": {
-                "y": {"field": "Continent", "axis": null},
+                "y": {
+                  "field": "Continent", "axis": null
+                },
                 "text": {
                   "aggregate": "mean",
                   "field": "Estimated Gross National Income per Capita",
-                  "type": "quantitative",
+                  "type": "quantitative", 
                   "format": ".1s"
                 },
                 "color": {"value": "black"},
@@ -355,41 +333,50 @@
               }
             }
           ]
-        },
+        }, 
         {
           "width": 110,
           "height": 150,
           "view": {"stroke": null},
-          "mark": {"type": "text", "fontSize": 14},
+          "mark": {
+            "type": "text",
+            "fontSize": 14
+          },
           "encoding": {
             "y": {"field": "Continent", "type": "nominal", "axis": null},
-            "text": {"field": "Continent", "type": "nominal"},
+            "text": {
+              "field": "Continent", 
+              "type": "nominal"
+            },
             "opacity": {"value": 0.1}
           }
-        },
+
+        }, 
         {
-          "width": 160,
+          "width": 150,
           "height": 150,
-          "transform": [{"filter": {"field": "Gender", "equal": "Female"}}],
+          "transform": [{
+            "filter": {"field": "Gender", "equal": "Female"}
+          }],
           "title": "Female",
           "layer": [
             {
               "mark": "bar",
               "encoding": {
                 "y": {
-                  "field": "Continent",
-                  "title": null,
-                  "axis": null,
-                  "sort": "descending"
+                  "field": "Continent", "title": null,
+                  "axis": null, "sort": "descending"
                 },
                 "x": {
-                  "aggregate": "mean",
-                  "field": "Estimated Gross National Income per Capita",
+                  "aggregate": "mean", "field": "Estimated Gross National Income per Capita",
                   "title": "Estimated GNI",
                   "axis": null,
                   "scale": {"domain": [0, 40000]}
                 },
-                "color": {"field": "Gender", "legend": null},
+                "color": {
+                  "field": "Gender",
+                  "legend": null
+                },
                 "opacity": {
                   "condition": {
                     "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
@@ -404,16 +391,18 @@
                 "type": "text",
                 "align": "center",
                 "baseline": "middle",
-                "dx": 100,
+                "dx": 80,
                 "fontSize": 13,
                 "fontStyle": "italic"
               },
               "encoding": {
-                "y": {"field": "Continent", "axis": null},
+                "y": {
+                  "field": "Continent", "axis": null
+                },
                 "text": {
                   "aggregate": "mean",
                   "field": "Estimated Gross National Income per Capita",
-                  "type": "quantitative",
+                  "type": "quantitative", 
                   "format": ".1s"
                 },
                 "color": {"value": "black"},
@@ -431,6 +420,14 @@
       ]
     }
   ],
-  "config": {"legend": {"orient": "left"}},
-  "resolve": {"scale": {"color": "independent"}}
+  "config": {
+    "legend": {
+      "orient": "left"
+    }
+  },
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  }
 }

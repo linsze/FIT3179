@@ -37,7 +37,11 @@ body {
     overflow: visible;
     width: 60%;
     float: left;
-    vertical-align: text-top;
+}
+
+.vega-bindings {
+    padding-left: 30px;
+    vertical-align: super;
 }
 
 .icon_container {
@@ -101,7 +105,7 @@ body {
 .visualization {
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 60%;
+    width: 50%;
     float: left;
 }
 
