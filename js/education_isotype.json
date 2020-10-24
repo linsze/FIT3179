@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Expected vs Actual Years of Education",
+  "config": {"view": {"stroke": ""}},
+  "width": 200,
+  "height": 23,
+  "background": "#ecd9c6",
+  "data": {
+    "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/Years_of_Education.csv"
+  },
+  "transform": [
+    {
+      "calculate": "{'Expected': '📘', 'Actual': '📙'}[datum['Education']]",
+      "as": "Edu_emoji"
+    },
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "groupby": ["Continent", "Education"]
+    },
+    {"filter": "datum['Edu_emoji']"}
+  ],
+  "mark": {"type": "text", "baseline": "middle"},
+  "encoding": {
+    "x": {"field": "rank", "type": "ordinal", "axis": null},
+    "column": {
+      "field": "Education",
+      "header": {"title": "", "labelFontSize": 14, "labelFontWeight": 600}
+    },
+    "row": {
+      "field": "Continent",
+      "header": {
+        "labelAngle": 0,
+        "labelAlign": "left",
+        "title": "",
+        "labelFontSize": 13,
+        "labelFontWeight": 600,
+        "labelColor": "#595959"
+      }
+    },
+    "text": {"field": "Edu_emoji", "type": "nominal"},
+    "size": {"value": 23},
+    "tooltip": [
+      {"field": "Continent", "type": "ordinal"},
+      {"field": "Years of Education", "type": "quantitative", "format": ".1f"}
+    ]
+  }
+}

@@ -53,22 +53,8 @@
               "field": "Continent",
               "type": "nominal",
               "scale": {
-                "domain": [
-                  "Asia",
-                  "Africa",
-                  "Europe",
-                  "North America",
-                  "South America",
-                  "Oceania"
-                ],
-                "range": [
-                  "#d95f0e",
-                  "#1f78b4",
-                  "#7570b3",
-                  "#ffff1a",
-                  "#4daf4a",
-                  "#c51b8a"
-                ]
+                "domain": ["Asia", "Africa", "Europe", "North America", "South America", "Oceania"],
+                "range": ["#d95f0e", "#1f78b4", "#7570b3", "#ffff1a", "#4daf4a", "#c51b8a"]
               }
             },
             "size": {
@@ -173,14 +159,7 @@
         {
           "filter": {
             "field": "Continent",
-            "oneOf": [
-              "Asia",
-              "Africa",
-              "Europe",
-              "North America",
-              "Oceania",
-              "South America"
-            ]
+            "oneOf": ["Asia", "Africa", "Europe", "North America", "Oceania", "South America"]
           }
         },
         {"filter": {"field": "Gender", "oneOf": ["Male", "Female"]}},
@@ -202,7 +181,7 @@
         "y": {
           "field": "Continent",
           "type": "nominal",
-          "axis": {"offset": 5, "ticks": false, "minExtent": 70, "domain": false}
+          "axis": {"offset": 5, "ticks": false, "domain": false, "title": ""}
         },
         "opacity": {
           "condition": {
@@ -260,6 +239,55 @@
     },
     {
       "title": {
+        "text": "Actual vs Expected Years of Education",
+        "anchor": "middle"
+      },
+      "spacing": 10,
+      "width": 200,
+      "height": 23,
+      "data": {
+        "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/Years_of_Education.csv"
+      },
+      "transform": [
+        {"calculate": "{'Expected': '📘', 'Actual': '📙'}[datum['Education']]", "as": "Edu_emoji"},
+        {"window": [{"op": "rank", "as": "rank"}], "groupby": ["Continent", "Education"]},
+        {"filter": "datum['Edu_emoji']"}
+      ],
+      "mark": {"type": "text", "baseline": "middle"},
+      "encoding": {
+        "x": {
+          "field": "rank", 
+          "type": "ordinal", 
+          "axis": null
+        },
+        "column": {
+          "field": "Education", 
+          "header": {
+            "title": "",
+            "labelFontSize": 13,
+            "labelFontWeight": 600
+          },
+          "spacing": 100
+        },
+        "row": {"field": "Continent", "header": {
+          "labelAngle": 0,
+          "labelAlign": "left",
+          "title": "",
+          "labelFontSize": 12,
+          "labelFontWeight": 600,
+          "labelColor": "#595959"
+        }},
+        "text": {"field": "Edu_emoji", "type": "nominal"},
+        "size": {"value": 23},
+        "opacity": {"value": 0.8},
+        "tooltip": [
+          {"field": "Continent", "type": "ordinal"},
+          {"field": "Years of Education", "type": "quantitative", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "title": {
         "text": "Average Gross National Income (GNI)",
         "anchor": "middle"
       },
@@ -274,7 +302,10 @@
           "transform": [{
               "filter": {"field": "Gender", "equal": "Male"}
           }],
-          "title": "Male",
+          "title": {
+            "text": "Male",
+            "fontSize": 13
+          },
           "layer": [
             {
               "mark": "bar",
@@ -339,10 +370,9 @@
           "height": 150,
           "mark": {
             "type": "text",
-            "fontSize": 14,
-            "font": "Helvetica Neue",
-            "color": "#595959",
-            "opacity": 0.2
+            "fontSize": 13,
+            "color": "#737373",
+            "opacity": 0.3
           },
           "encoding": {
             "y": {"field": "Continent", "type": "nominal", "axis": null},
@@ -359,7 +389,10 @@
           "transform": [{
             "filter": {"field": "Gender", "equal": "Female"}
           }],
-          "title": "Female",
+          "title": {
+            "text": "Female",
+            "fontSize": 13
+          },
           "layer": [
             {
               "mark": "bar",
@@ -423,7 +456,25 @@
   ],
   "config": {
     "legend": {
-      "orient": "left"
+      "orient": "left",
+      "labelFontSize": 11.5,
+      "labelColor": "#262626",
+      "titleFontSize": 12,
+      "titleColor": "#262626",
+      "rowPadding": 5
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "labelFontWeight": 600,
+      "labelColor": "#595959",
+      "titleColor": "#333333",
+      "titleFontWeight": 600,
+      "titleFontSize": 12
+    },
+    "title": {
+      "color": "#0d0d0d",
+      "fontSize": 14,
+      "fontWeight": 600
     }
   },
   "resolve": {
