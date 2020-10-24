@@ -1,14 +1,6 @@
 ﻿Continent,Education,Years of Education
 Africa,Mean,5.007547
 Africa,Mean,5.007547
-Africa,Mean,5.007547
-Africa,Mean,5.007547
-Africa,Mean,5.007547
-Africa,Expected,10.29623
-Africa,Expected,10.29623
-Africa,Expected,10.29623
-Africa,Expected,10.29623
-Africa,Expected,10.29623
 Africa,Expected,10.29623
 Africa,Expected,10.29623
 Africa,Expected,10.29623
@@ -18,16 +10,6 @@ Asia,Mean,8.185417
 Asia,Mean,8.185417
 Asia,Mean,8.185417
 Asia,Mean,8.185417
-Asia,Mean,8.185417
-Asia,Mean,8.185417
-Asia,Mean,8.185417
-Asia,Mean,8.185417
-Asia,Expected,12.8625
-Asia,Expected,12.8625
-Asia,Expected,12.8625
-Asia,Expected,12.8625
-Asia,Expected,12.8625
-Asia,Expected,12.8625
 Asia,Expected,12.8625
 Asia,Expected,12.8625
 Asia,Expected,12.8625
@@ -40,19 +22,6 @@ Europe,Mean,11.15128
 Europe,Mean,11.15128
 Europe,Mean,11.15128
 Europe,Mean,11.15128
-Europe,Mean,11.15128
-Europe,Mean,11.15128
-Europe,Mean,11.15128
-Europe,Mean,11.15128
-Europe,Mean,11.15128
-Europe,Expected,15.49487
-Europe,Expected,15.49487
-Europe,Expected,15.49487
-Europe,Expected,15.49487
-Europe,Expected,15.49487
-Europe,Expected,15.49487
-Europe,Expected,15.49487
-Europe,Expected,15.49487
 Europe,Expected,15.49487
 Europe,Expected,15.49487
 Europe,Expected,15.49487
@@ -65,16 +34,6 @@ North America,Mean,9.080769
 North America,Mean,9.080769
 North America,Mean,9.080769
 North America,Mean,9.080769
-North America,Mean,9.080769
-North America,Mean,9.080769
-North America,Mean,9.080769
-North America,Mean,9.080769
-North America,Expected,13.52692
-North America,Expected,13.52692
-North America,Expected,13.52692
-North America,Expected,13.52692
-North America,Expected,13.52692
-North America,Expected,13.52692
 North America,Expected,13.52692
 North America,Expected,13.52692
 North America,Expected,13.52692
@@ -87,16 +46,6 @@ Oceania,Mean,9.2727
 Oceania,Mean,9.2727
 Oceania,Mean,9.2727
 Oceania,Mean,9.2727
-Oceania,Mean,9.2727
-Oceania,Mean,9.2727
-Oceania,Mean,9.2727
-Oceania,Mean,9.2727
-Oceania,Expected,13.64545
-Oceania,Expected,13.64545
-Oceania,Expected,13.64545
-Oceania,Expected,13.64545
-Oceania,Expected,13.64545
-Oceania,Expected,13.64545
 Oceania,Expected,13.64545
 Oceania,Expected,13.64545
 Oceania,Expected,13.64545
@@ -108,10 +57,6 @@ South America,Mean,8.490909
 South America,Mean,8.490909
 South America,Mean,8.490909
 South America,Mean,8.490909
-South America,Mean,8.490909
-South America,Mean,8.490909
-South America,Mean,8.490909
-South America,Mean,8.490909
 South America,Expected,13.94545
 South America,Expected,13.94545
 South America,Expected,13.94545
@@ -119,9 +64,51 @@ South America,Expected,13.94545
 South America,Expected,13.94545
 South America,Expected,13.94545
 South America,Expected,13.94545
-South America,Expected,13.94545
-South America,Expected,13.94545
-South America,Expected,13.94545
-South America,Expected,13.94545
-South America,Expected,13.94545
-South America,Expected,13.94545
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
