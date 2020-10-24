@@ -23,9 +23,11 @@ body {
 
 /* Both slider and selection inputs */
 .vega-bindings {
+    overflow: visible;
+    position: absolute;
     padding-left: 25px;
-    vertical-align: super;
-    font-size: 15px;
+    font-size: 14px;
+    top: 350px;
 }
 
 /* Slider */
@@ -47,12 +49,12 @@ input[type=range]::-webkit-slider-thumb {
     overflow: auto;
     -webkit-appearance: none;
     border: 1px solid #000000;
-    height: 28px;
+    height: 26px;
     width: 14px;
     border-radius: 3px;
     background: #4040bf;
     cursor: pointer;
-    margin-top: -14px; 
+    margin-top: -10px; 
 }  
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -91,7 +93,7 @@ input[type=range]::-webkit-slider-runnable-track {
     position: relative;
     width: 80px;
     height: 80px;
-    margin: 20px;
+    margin: 30px;
 }
 
 .icon {

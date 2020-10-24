@@ -337,18 +337,19 @@
         {
           "width": 110,
           "height": 150,
-          "view": {"stroke": null},
           "mark": {
             "type": "text",
-            "fontSize": 14
+            "fontSize": 14,
+            "font": "Helvetica Neue",
+            "color": "#595959",
+            "opacity": 0.2
           },
           "encoding": {
             "y": {"field": "Continent", "type": "nominal", "axis": null},
             "text": {
               "field": "Continent", 
               "type": "nominal"
-            },
-            "opacity": {"value": 0.1}
+            }
           }
 
         }, 
