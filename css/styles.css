@@ -164,14 +164,14 @@ select:focus > option:checked {
 
 #health {
     padding-left: 40px;
-    padding-top: 105px;
+    padding-top: 130px;
 }
 
 #education {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 #income {
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 65px;
 }
