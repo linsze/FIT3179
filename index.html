@@ -34,7 +34,7 @@
       <div class="icon_container">
         <img src="data/life_expectancy_logo.png" alt="Health" class="icon">
         <div class="icon_middle">
-          <a href="#lifeexpect_dotplot">
+          <a href="#health">
             <div class="icon_middle_text">Health</div>
           </a>
         </div>
@@ -42,7 +42,7 @@
       <div class="icon_container">
         <img src="data/education_logo.png" alt="Education" class="icon">
         <div class="icon_middle">
-          <a href="#">
+          <a href="#education">
             <div class="icon_middle_text">Education</div>
           </a>
         </div>
@@ -50,7 +50,7 @@
       <div class="icon_container">
         <img src="data/income_logo.png" alt="Income" class="icon">
         <div class="icon_middle">
-          <a href="#gni_horizontal_bar">
+          <a href="#income">
             <div class="icon_middle_text">Income</div>
           </a>
         </div>
@@ -58,11 +58,10 @@
     </div>
     
     <!--Second row with life expectancy vs gni vis-->
-    <!-- <div class="visualization pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="life_vs_gni_bubble"> -->
-    <div class="visualization pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="composite"></div>
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="composite"></div>
     </div>
 
-    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" style="padding-left: 20px;">
+    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" style="padding-left: 20px; padding-top: 15px;">
       <h2>Capabilities</h2>
       <p>Capabilities are the equipment one has to pursue a life of value. Basic capabilities 
         valued by virtually everyone include good <b>health</b>, access to <b>knowledge</b>, 
@@ -71,10 +70,7 @@
     </div>
 
     <!--Third row with Health vis-->
-    <!-- <div class="visualization pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="lifeexpect_dotplot">
-    </div> -->
-
-    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="lifeexpect_dotplot" style="padding-top: 100px;">
+    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="health">
       <h2>A Long and Healthy Life</h2>
       <p>The <b>most valuable capability</b> people possess is to <b>be alive</b>. <b>Life 
         expectancy at birth</b> stands as a proxy for this capability. It is the average 
@@ -82,11 +78,17 @@
         continue throughout his or her lifetime.</p>
     </div>
 
-    <!--Forth row with Income vis-->
-    <!-- <div class="visualization pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="gni_horizontal_bar">
-    </div> -->
+    <!--Forth row with Education vis-->
+    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="education">
+      <h2>Access to Knowledge</h2>
+      <p>Access to knowledge is a <b>critical determinant of long-term well-being</b> and is essential 
+        to individual freedom, self-determination, and self-sufficiency. <b>Education</b> is able to
+        build confidence, confer status and dignity, broaden the horizons of the possible and allow the 
+        acquisition of skills and credentials.</p>
+    </div>
 
-    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="gni_horizontal_bar" style="padding-top: 20px;";>
+    <!--Fifth row with Income vis-->
+    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="income">
       <h2>A Decent Standard of Living</h2>
       <p><b>Income</b> is essential to meeting basic needs like food and shelter—and to moving 
         beyond these necessities to a life of genuine choice and freedom. It enables valuable 
@@ -98,24 +100,12 @@
 
 <script type="text/javascript">
   var specVis1 = "https://linsze.github.io/FIT3179/js/choropleth_map.json";
-  // var specVis2 = "https://linsze.github.io/FIT3179/js/lifeexpect_gni_bubble.json";
-  // var specVis3 = "https://linsze.github.io/FIT3179/js/lifeexpect_dotplot.json";
-  // var specVis4 = "https://linsze.github.io/FIT3179/js/gni_horizontal_bar.json";
-  var specVis5 = "https://linsze.github.io/FIT3179/js/composite_vis.json";
+  var specVis2 = "https://linsze.github.io/FIT3179/js/composite_vis.json";
    
   vegaEmbed('#choropleth_map', specVis1, {"actions": false}).then(function(result) {
   }).catch(console.error);
 
-  // vegaEmbed('#life_vs_gni_bubble', specVis2, {"actions": false}).then(function(result) {
-  // }).catch(console.error);
-  
-  // vegaEmbed('#lifeexpect_dotplot', specVis3, {"actions": false}).then(function(result) {
-  // }).catch(console.error);
-
-  // vegaEmbed('#gni_horizontal_bar', specVis4, {"actions": false}).then(function(result) {
-  // }).catch(console.error);
-
-  vegaEmbed('#composite', specVis5, {"actions": false}).then(function(result) {
+  vegaEmbed('#composite', specVis2, {"actions": false}).then(function(result) {
   }).catch(console.error);
 
 </script>

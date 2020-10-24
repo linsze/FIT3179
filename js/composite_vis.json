@@ -17,7 +17,7 @@
       }
     }
   ],
-  "spacing": 50,
+  "spacing": 70,
   "vconcat": [
     {
       "width": 450,
@@ -267,7 +267,7 @@
             "labelFontSize": 13,
             "labelFontWeight": 600
           },
-          "spacing": 100
+          "spacing": 50
         },
         "row": {"field": "Continent", "header": {
           "labelAngle": 0,
@@ -279,7 +279,13 @@
         }},
         "text": {"field": "Edu_emoji", "type": "nominal"},
         "size": {"value": 23},
-        "opacity": {"value": 0.8},
+        "opacity": {
+          "condition": {
+            "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+            "value": 0.8
+          },
+          "value": 0.2
+        },
         "tooltip": [
           {"field": "Continent", "type": "ordinal"},
           {"field": "Years of Education", "type": "quantitative", "format": ".1f"}
@@ -366,7 +372,7 @@
           ]
         }, 
         {
-          "width": 110,
+          "width": 80,
           "height": 150,
           "mark": {
             "type": "text",

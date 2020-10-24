@@ -155,20 +155,23 @@ select:focus > option:checked {
     padding-top: 20px;
 }
 
-/* All visualizations in the page */
-.visualization {
+#composite {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 50%;
     float: left;
 }
 
-#lifeexpect_dotplot {
+#health {
     padding-left: 40px;
-    padding-top: 30px;
+    padding-top: 105px;
 }
 
-#gni_horizontal_bar {
+#education {
+    padding-top: 20px;
+}
+
+#income {
     padding-left: 50px;
-    padding-top: 40px;
+    padding-top: 50px;
 }
