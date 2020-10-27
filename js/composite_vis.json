@@ -8,10 +8,22 @@
       "bind": {
         "input": "select",
         "options": [
-          null, "Africa", "Asia", "Europe", "North America", "Oceania", "South America"
+          null,
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
         ],
         "labels": [
-        "All", "Africa", "Asia", "Europe", "North America", "Oceania", "South America"
+          "All",
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
         ],
         "name": "Continent: "
       }
@@ -53,8 +65,22 @@
               "field": "Continent",
               "type": "nominal",
               "scale": {
-                "domain": ["Asia", "Africa", "Europe", "North America", "South America", "Oceania"],
-                "range": ["#d95f0e", "#1f78b4", "#7570b3", "#ffff1a", "#4daf4a", "#c51b8a"]
+                "domain": [
+                  "Asia",
+                  "Africa",
+                  "Europe",
+                  "North America",
+                  "South America",
+                  "Oceania"
+                ],
+                "range": [
+                  "#d95f0e",
+                  "#1f78b4",
+                  "#7570b3",
+                  "#ffff1a",
+                  "#4daf4a",
+                  "#c51b8a"
+                ]
               }
             },
             "size": {
@@ -149,7 +175,7 @@
       ]
     },
     {
-      "width": 450,
+      "width": 400,
       "height": 250,
       "title": "Average Life Expectancy at Birth",
       "data": {
@@ -159,13 +185,24 @@
         {
           "filter": {
             "field": "Continent",
-            "oneOf": ["Asia", "Africa", "Europe", "North America", "Oceania", "South America"]
+            "oneOf": [
+              "Asia",
+              "Africa",
+              "Europe",
+              "North America",
+              "Oceania",
+              "South America"
+            ]
           }
         },
         {"filter": {"field": "Gender", "oneOf": ["Male", "Female"]}},
         {
           "aggregate": [
-            {"op": "mean", "field": "Life Expectancy at Birth", "as": "Mean_life"}
+            {
+              "op": "mean",
+              "field": "Life Expectancy at Birth",
+              "as": "Mean_life"
+            }
           ],
           "groupby": ["Continent", "Gender"]
         }
@@ -231,7 +268,11 @@
             "fontStyle": "italic"
           },
           "encoding": {
-            "text": {"field": "Mean_life", "type": "quantitative", "format": ".1f"},
+            "text": {
+              "field": "Mean_life",
+              "type": "quantitative",
+              "format": ".1f"
+            },
             "color": {"value": "black"}
           }
         }
@@ -243,40 +284,41 @@
         "anchor": "middle"
       },
       "spacing": 10,
-      "width": 200,
+      "width": 170,
       "height": 23,
       "data": {
         "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/Years_of_Education.csv"
       },
       "transform": [
-        {"calculate": "{'Expected': '📘', 'Actual': '📙'}[datum['Education']]", "as": "Edu_emoji"},
-        {"window": [{"op": "rank", "as": "rank"}], "groupby": ["Continent", "Education"]},
+        {
+          "calculate": "{'Expected': '📘', 'Actual': '📙'}[datum['Education']]",
+          "as": "Edu_emoji"
+        },
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "groupby": ["Continent", "Education"]
+        },
         {"filter": "datum['Edu_emoji']"}
       ],
       "mark": {"type": "text", "baseline": "middle"},
       "encoding": {
-        "x": {
-          "field": "rank", 
-          "type": "ordinal", 
-          "axis": null
-        },
+        "x": {"field": "rank", "type": "ordinal", "axis": null},
         "column": {
-          "field": "Education", 
-          "header": {
-            "title": "",
-            "labelFontSize": 13,
-            "labelFontWeight": 600
-          },
+          "field": "Education",
+          "header": {"title": "", "labelFontSize": 13, "labelFontWeight": 600},
           "spacing": 50
         },
-        "row": {"field": "Continent", "header": {
-          "labelAngle": 0,
-          "labelAlign": "left",
-          "title": "",
-          "labelFontSize": 12,
-          "labelFontWeight": 600,
-          "labelColor": "#595959"
-        }},
+        "row": {
+          "field": "Continent",
+          "header": {
+            "labelAngle": 0,
+            "labelAlign": "left",
+            "title": "",
+            "labelFontSize": 12,
+            "labelFontWeight": 600,
+            "labelColor": "#595959"
+          }
+        },
         "text": {"field": "Edu_emoji", "type": "nominal"},
         "size": {"value": 23},
         "opacity": {
@@ -288,7 +330,11 @@
         },
         "tooltip": [
           {"field": "Continent", "type": "ordinal"},
-          {"field": "Years of Education", "type": "quantitative", "format": ".1f"}
+          {
+            "field": "Years of Education",
+            "type": "quantitative",
+            "format": ".1f"
+          }
         ]
       }
     },
@@ -297,7 +343,9 @@
         "text": "Average Gross National Income (GNI)",
         "anchor": "middle"
       },
-      "data": { "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/GNI.csv"},
+      "data": {
+        "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/GNI.csv"
+      },
       "transform": [
         {"filter": "datum['Estimated Gross National Income per Capita'] > 0"}
       ],
@@ -305,22 +353,16 @@
         {
           "width": 150,
           "height": 150,
-          "transform": [{
-              "filter": {"field": "Gender", "equal": "Male"}
-          }],
-          "title": {
-            "text": "Male",
-            "fontSize": 13
-          },
+          "transform": [{"filter": {"field": "Gender", "equal": "Male"}}],
+          "title": {"text": "Male", "fontSize": 13},
           "layer": [
             {
               "mark": "bar",
               "encoding": {
-                "y": {
-                  "field": "Continent", "axis": null
-                },
+                "y": {"field": "Continent", "axis": null},
                 "x": {
-                  "aggregate": "mean", "field": "Estimated Gross National Income per Capita",
+                  "aggregate": "mean",
+                  "field": "Estimated Gross National Income per Capita",
                   "title": "Estimated GNI",
                   "axis": null,
                   "sort": "descending",
@@ -337,7 +379,17 @@
                     "value": 1
                   },
                   "value": 0.2
-                }
+                },
+                "tooltip": [
+                  {"field": "Continent", "type": "ordinal"},
+                  {
+                    "field": "Estimated Gross National Income per Capita",
+                    "aggregate": "mean",
+                    "title": "Mean GNI per Capita",
+                    "type": "quantitative",
+                    "format": ".2f"
+                  }
+                ]
               }
             },
             {
@@ -345,18 +397,16 @@
                 "type": "text",
                 "align": "center",
                 "baseline": "middle",
-                "dx": -100,
+                "dx": -80,
                 "fontSize": 13,
                 "fontStyle": "italic"
               },
               "encoding": {
-                "y": {
-                  "field": "Continent", "axis": null
-                },
+                "y": {"field": "Continent", "axis": null},
                 "text": {
                   "aggregate": "mean",
                   "field": "Estimated Gross National Income per Capita",
-                  "type": "quantitative", 
+                  "type": "quantitative",
                   "format": ".1s"
                 },
                 "color": {"value": "black"},
@@ -370,9 +420,9 @@
               }
             }
           ]
-        }, 
+        },
         {
-          "width": 80,
+          "width": 60,
           "height": 150,
           "mark": {
             "type": "text",
@@ -382,48 +432,49 @@
           },
           "encoding": {
             "y": {"field": "Continent", "type": "nominal", "axis": null},
-            "text": {
-              "field": "Continent", 
-              "type": "nominal"
-            }
+            "text": {"field": "Continent", "type": "nominal"}
           }
-
-        }, 
+        },
         {
-          "width": 150,
+          "width": 140,
           "height": 150,
-          "transform": [{
-            "filter": {"field": "Gender", "equal": "Female"}
-          }],
-          "title": {
-            "text": "Female",
-            "fontSize": 13
-          },
+          "transform": [{"filter": {"field": "Gender", "equal": "Female"}}],
+          "title": {"text": "Female", "fontSize": 13},
           "layer": [
             {
               "mark": "bar",
               "encoding": {
                 "y": {
-                  "field": "Continent", "title": null,
-                  "axis": null, "sort": "descending"
+                  "field": "Continent",
+                  "title": null,
+                  "axis": null,
+                  "sort": "descending"
                 },
                 "x": {
-                  "aggregate": "mean", "field": "Estimated Gross National Income per Capita",
+                  "aggregate": "mean",
+                  "field": "Estimated Gross National Income per Capita",
                   "title": "Estimated GNI",
                   "axis": null,
                   "scale": {"domain": [0, 40000]}
                 },
-                "color": {
-                  "field": "Gender",
-                  "legend": null
-                },
+                "color": {"field": "Gender", "legend": null},
                 "opacity": {
                   "condition": {
                     "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
                     "value": 1
                   },
                   "value": 0.2
-                }
+                },
+                "tooltip": [
+                  {"field": "Continent", "type": "ordinal"},
+                  {
+                    "field": "Estimated Gross National Income per Capita",
+                    "aggregate": "mean",
+                    "title": "Mean GNI per Capita",
+                    "type": "quantitative",
+                    "format": ".2f"
+                  }
+                ]
               }
             },
             {
@@ -431,18 +482,16 @@
                 "type": "text",
                 "align": "center",
                 "baseline": "middle",
-                "dx": 80,
+                "dx": 40,
                 "fontSize": 13,
                 "fontStyle": "italic"
               },
               "encoding": {
-                "y": {
-                  "field": "Continent", "axis": null
-                },
+                "y": {"field": "Continent", "axis": null},
                 "text": {
                   "aggregate": "mean",
                   "field": "Estimated Gross National Income per Capita",
-                  "type": "quantitative", 
+                  "type": "quantitative",
                   "format": ".1s"
                 },
                 "color": {"value": "black"},
@@ -463,11 +512,12 @@
   "config": {
     "legend": {
       "orient": "left",
-      "labelFontSize": 11.5,
+      "labelFontSize": 11.2,
       "labelColor": "#262626",
       "titleFontSize": 12,
       "titleColor": "#262626",
-      "rowPadding": 5
+      "rowPadding": 5,
+      "columnPadding": 0
     },
     "axis": {
       "labelFontSize": 12,
@@ -478,14 +528,10 @@
       "titleFontSize": 12
     },
     "title": {
-      "color": "#0d0d0d",
-      "fontSize": 14,
+      "color": "#0d0d0d", 
+      "fontSize": 14, 
       "fontWeight": 600
     }
   },
-  "resolve": {
-    "scale": {
-      "color": "independent"
-    }
-  }
+  "resolve": {"scale": {"color": "independent"}}
 }
