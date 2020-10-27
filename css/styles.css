@@ -25,6 +25,7 @@ body {
 .vega-bindings {
     overflow: visible;
     position: absolute;
+    padding-top: 30px;
     padding-left: 25px;
     font-size: 14px;
     top: 350px;
@@ -152,11 +153,10 @@ select:focus > option:checked {
     height: 300px;
     width: 36.5%;
     padding-right: 20px;
-    padding-top: 20px;
 }
 
 #composite {
-    padding-top: 15px;
+    padding-top: 45px;
     padding-bottom: 15px;
     width: 50%;
     float: left;
