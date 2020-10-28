@@ -7,12 +7,18 @@ body {
 }
 
 #title {
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .center_text {
     text-align: center;
+}
+
+.bold_inline_text {
+    color:#1a0000;
+    font-weight: 800;
 }
 
 #choropleth_map {
@@ -21,21 +27,19 @@ body {
     float: left;
 }
 
-/* Both slider and selection inputs */
-.vega-bindings {
+/* Slider */
+#choropleth_map .vega-bind {
     overflow: visible;
-    position: absolute;
     padding-top: 30px;
     padding-left: 25px;
     font-size: 14px;
-    top: 350px;
 }
 
-/* Slider */
 input[type=range] {
     -webkit-appearance: none; 
     width: 150px;
     background-color: white;
+    position: relative;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -142,6 +146,19 @@ input[type=range]::-webkit-slider-runnable-track {
 /* End selection icon */
 
 /* Drop down selection menu */
+#composite .vega-bind {
+    overflow: visible;
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 25px;
+    font-size: 14px;
+    top: 350px;
+}
+
+select {
+    position: absolute;
+}
+
 select:focus > option:checked { 
     background: #8f8ffa;
 }
@@ -153,6 +170,7 @@ select:focus > option:checked {
     height: 300px;
     width: 36.5%;
     padding-right: 20px;
+    padding-top: 45px;
 }
 
 #composite {
