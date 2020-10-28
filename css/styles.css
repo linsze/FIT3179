@@ -168,7 +168,7 @@ select:focus > option:checked {
     position: relative;
     float: right;
     height: 300px;
-    width: 36.5%;
+    width: 38%;
     padding-right: 20px;
     padding-top: 45px;
 }
