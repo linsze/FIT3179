@@ -1,0 +1,377 @@
+﻿Country,Continent,GNI Female,GNI Male
+Norway,Europe,57140,72825
+Australia,Oceania,33688,50914
+Switzerland,Europe,44132,69077
+Denmark,North America,36439,51727
+Netherlands,North America,29500,61641
+Germany,Europe,34886,53290
+Ireland,Europe,30104,49166
+United States,North America,43054,63158
+Canada,North America,33587,50853
+New Zealand,Oceania,24309,41372
+Singapore,Asia,59994,93699
+"Hong Kong, China (SAR)",Asia,38060,72052
+Liechtenstein,Europe,0,0
+Sweden,Europe,40222,51084
+United Kingdom,Europe,27259,51628
+Iceland,Europe,28792,41486
+Korea (Republic of),Asia,21896,46018
+Israel,Asia,22451,39064
+Luxembourg,Europe,47723,69800
+Japan,Asia,24975,49541
+Belgium,Europe,31879,50845
+France,Europe,31073,45497
+Austria,Europe,29598,58826
+Finland,Europe,31644,45994
+Slovenia,Europe,22180,33593
+Spain,Europe,24059,40221
+Italy,Europe,22526,44148
+Czech Republic,Europe,19929,33604
+Greece,Europe,17288,31952
+Estonia,Europe,20854,30254
+Brunei Darussalam,Asia,54228,90437
+Cyprus,Europe,22613,34400
+Qatar,Asia,55123,143979
+Andorra,Europe,0,0
+Slovakia,Europe,19903,32122
+Poland,Europe,18423,28271
+Lithuania,Europe,20955,28656
+Malta,Europe,16435,39432
+Saudi Arabia,Asia,20094,77044
+Argentina,South America,14202,30237
+United Arab Emirates,Asia,22391,77300
+Chile,South America,14732,27992
+Portugal,Europe,21259,30543
+Hungary,Europe,17443,28960
+Bahrain,Asia,20038,49890
+Latvia,Europe,18437,26845
+Croatia,Europe,16200,22853
+Kuwait,Asia,42292,111988
+Montenegro,Europe,11106,18094
+Belarus,Europe,12922,21010
+Russian Federation,Asia,17269,28287
+Oman,Asia,14709,46400
+Romania,Europe,15250,21117
+Uruguay,South America,14721,24166
+Bahamas,North America,17868,24957
+Kazakhstan,Asia,15408,26746
+Barbados,North America,10245,14739
+Antigua and Barbuda,North America,0,0
+Bulgaria,Europe,12448,18926
+Palau,Oceania,0,0
+Panama,North America,13699,22597
+Malaysia,Asia,15635,30320
+Mauritius,Africa,10541,24581
+Seychelles,Africa,0,0
+Trinidad and Tobago,North America,19669,32656
+Serbia,Europe,9697,14799
+Cuba,North America,4912,9665
+Lebanon,Asia,7334,25391
+Costa Rica,North America,9680,17033
+Iran (Islamic Republic of),Asia,4828,25924
+Venezuela (Bolivarian Republic of),South America,12458,19840
+Turkey,Asia,10024,27645
+Sri Lanka,Asia,5452,14307
+Mexico,North America,10233,22252
+Brazil,South America,11393,19084
+Georgia,Asia,4887,9718
+Saint Kitts and Nevis,North America,0,0
+Azerbaijan,Asia,10120,22814
+Grenada,North America,0,0
+Jordan,Asia,3587,18831
+The former Yugoslav Republic of Macedonia,Europe,8796,14754
+Ukraine,Europe,6518,10120
+Algeria,Africa,3898,22009
+Peru,South America,8040,13977
+Albania,Europe,7217,12655
+Armenia,Asia,6042,10089
+Bosnia and Herzegovina,Europe,6514,12912
+Ecuador,South America,8487,12723
+Saint Lucia,North America,8018,11576
+China,Asia,10128,14795
+Fiji,Oceania,4274,10592
+Mongolia,Asia,9029,12462
+Thailand,Asia,11820,14888
+Dominica,North America,0,0
+Libya,Africa,7427,22392
+Tunisia,Africa,4748,16159
+Colombia,North America,9785,14372
+Saint Vincent and the Grenadines,North America,7283,12541
+Jamaica,North America,5820,9059
+Tonga,Oceania,3796,6336
+Belize,North America,5034,10198
+Dominican Republic,North America,8860,14903
+Suriname,South America,10241,20970
+Maldives,Asia,8531,16073
+Samoa,Oceania,3416,7124
+Botswana,Africa,15179,18096
+Moldova (Republic of),Europe,4599,5915
+Egypt,Africa,4928,16049
+Turkmenistan,Asia,8725,17552
+Gabon,Africa,13527,19177
+Indonesia,Asia,6485,13052
+Paraguay,South America,5576,9678
+"Palestine, State of",Asia,1580,7726
+Uzbekistan,Asia,3811,7342
+Philippines,Asia,5382,10439
+El Salvador,North America,5497,9406
+South Africa,Africa,8713,15737
+Viet Nam,Asia,4624,5570
+Bolivia (Plurinational State of),South America,4383,7140
+Kyrgyzstan,Asia,2122,3992
+Iraq,Asia,4279,23515
+Cabo Verde,Africa,4098,8105
+Micronesia (Federated States of),Oceania,0,0
+Guyana,South America,4164,8804
+Nicaragua,North America,2967,5979
+Morocco,Africa,3222,10573
+Namibia,Africa,7672,11267
+Guatemala,North America,5021,8934
+Tajikistan,Asia,2014,3017
+India,Asia,2116,8656
+Honduras,North America,2365,5508
+Bhutan,Asia,5733,8418
+Timor-Leste,Asia,3122,7530
+Syrian Arab Republic,Asia,864,4523
+Vanuatu,Oceania,2141,3445
+Dem. Rep. Congo,Africa,5165,6859
+Kiribati,Oceania,0,0
+Equatorial Guinea,Africa,17073,24850
+Zambia,Africa,3019,4452
+Ghana,Africa,3200,4515
+Lao People's Democratic Republic,Asia,4086,5279
+Bangladesh,Asia,2278,4083
+Cambodia,Asia,2526,3393
+Sao Tome and Principe,Africa,1886,3976
+Kenya,Africa,2255,3270
+Nepal,Asia,1956,2690
+Pakistan,Asia,1450,8100
+Myanmar,Asia,3873,5386
+Angola,Africa,5497,8169
+Swaziland,Africa,3894,7235
+Tanzania (United Republic of),Africa,2320,2502
+Nigeria,Africa,4052,6585
+Cameroon,Africa,2266,3341
+Madagascar,Africa,1098,1560
+Zimbabwe,Africa,1387,1850
+Mauritania,Africa,1625,5468
+Solomon Islands,Oceania,1046,2019
+Papua New Guinea,Oceania,2145,2768
+Comoros,Africa,778,2123
+Yemen,Asia,1595,5412
+Lesotho,Africa,2613,4017
+Togo,Africa,1084,1376
+Haiti,North America,1379,1966
+Rwanda,Africa,1312,1612
+Uganda,Africa,1226,1997
+Benin,Africa,1493,2043
+Sudan,Africa,1882,5722
+Djibouti,Africa,2019,4522
+South Sudan,Africa,0,0
+Senegal,Africa,1657,2739
+Afghanistan,Asia,506,3227
+CÃ´te d'Ivoire,Africa,2146,4157
+Malawi,Africa,679,815
+Ethiopia,Africa,1090,1765
+Gambia,Africa,1267,1753
+Congo (Democratic Republic of the),Africa,597,765
+Liberia,Africa,678,930
+Guinea-Bissau,Africa,1135,1593
+Mali,Africa,961,2195
+Mozambique,Africa,1040,1210
+Sierra Leone,Africa,1582,1981
+Guinea,Africa,877,1314
+Burkina Faso,Africa,1325,1859
+Burundi,Africa,693,825
+Chad,Africa,1657,2513
+Eritrea,Africa,971,1290
+Central African Republic,Africa,476,689
+Niger,Africa,491,1319
+Norway,Europe,,
+Australia,Oceania,,
+Switzerland,Europe,,
+Denmark,North America,,
+Netherlands,North America,,
+Germany,Europe,,
+Ireland,Europe,,
+United States,North America,,
+Canada,North America,,
+New Zealand,Oceania,,
+Singapore,Asia,,
+"Hong Kong, China (SAR)",Asia,,
+Liechtenstein,Europe,,
+Sweden,Europe,,
+United Kingdom,Europe,,
+Iceland,Europe,,
+Korea (Republic of),Asia,,
+Israel,Asia,,
+Luxembourg,Europe,,
+Japan,Asia,,
+Belgium,Europe,,
+France,Europe,,
+Austria,Europe,,
+Finland,Europe,,
+Slovenia,Europe,,
+Spain,Europe,,
+Italy,Europe,,
+Czech Republic,Europe,,
+Greece,Europe,,
+Estonia,Europe,,
+Brunei Darussalam,Asia,,
+Cyprus,Europe,,
+Qatar,Asia,,
+Andorra,Europe,,
+Slovakia,Europe,,
+Poland,Europe,,
+Lithuania,Europe,,
+Malta,Europe,,
+Saudi Arabia,Asia,,
+Argentina,South America,,
+United Arab Emirates,Asia,,
+Chile,South America,,
+Portugal,Europe,,
+Hungary,Europe,,
+Bahrain,Asia,,
+Latvia,Europe,,
+Croatia,Europe,,
+Kuwait,Asia,,
+Montenegro,Europe,,
+Belarus,Europe,,
+Russian Federation,Asia,,
+Oman,Asia,,
+Romania,Europe,,
+Uruguay,South America,,
+Bahamas,North America,,
+Kazakhstan,Asia,,
+Barbados,North America,,
+Antigua and Barbuda,North America,,
+Bulgaria,Europe,,
+Palau,Oceania,,
+Panama,North America,,
+Malaysia,Asia,,
+Mauritius,Africa,,
+Seychelles,Africa,,
+Trinidad and Tobago,North America,,
+Serbia,Europe,,
+Cuba,North America,,
+Lebanon,Asia,,
+Costa Rica,North America,,
+Iran (Islamic Republic of),Asia,,
+Venezuela (Bolivarian Republic of),South America,,
+Turkey,Asia,,
+Sri Lanka,Asia,,
+Mexico,North America,,
+Brazil,South America,,
+Georgia,Asia,,
+Saint Kitts and Nevis,North America,,
+Azerbaijan,Asia,,
+Grenada,North America,,
+Jordan,Asia,,
+The former Yugoslav Republic of Macedonia,Europe,,
+Ukraine,Europe,,
+Algeria,Africa,,
+Peru,South America,,
+Albania,Europe,,
+Armenia,Asia,,
+Bosnia and Herzegovina,Europe,,
+Ecuador,South America,,
+Saint Lucia,North America,,
+China,Asia,,
+Fiji,Oceania,,
+Mongolia,Asia,,
+Thailand,Asia,,
+Dominica,North America,,
+Libya,Africa,,
+Tunisia,Africa,,
+Colombia,North America,,
+Saint Vincent and the Grenadines,North America,,
+Jamaica,North America,,
+Tonga,Oceania,,
+Belize,North America,,
+Dominican Republic,North America,,
+Suriname,South America,,
+Maldives,Asia,,
+Samoa,Oceania,,
+Botswana,Africa,,
+Moldova (Republic of),Europe,,
+Egypt,Africa,,
+Turkmenistan,Asia,,
+Gabon,Africa,,
+Indonesia,Asia,,
+Paraguay,South America,,
+"Palestine, State of",Asia,,
+Uzbekistan,Asia,,
+Philippines,Asia,,
+El Salvador,North America,,
+South Africa,Africa,,
+Viet Nam,Asia,,
+Bolivia (Plurinational State of),South America,,
+Kyrgyzstan,Asia,,
+Iraq,Asia,,
+Cabo Verde,Africa,,
+Micronesia (Federated States of),Oceania,,
+Guyana,South America,,
+Nicaragua,North America,,
+Morocco,Africa,,
+Namibia,Africa,,
+Guatemala,North America,,
+Tajikistan,Asia,,
+India,Asia,,
+Honduras,North America,,
+Bhutan,Asia,,
+Timor-Leste,Asia,,
+Syrian Arab Republic,Asia,,
+Vanuatu,Oceania,,
+Congo,Africa,,
+Kiribati,Oceania,,
+Equatorial Guinea,Africa,,
+Zambia,Africa,,
+Ghana,Africa,,
+Lao People's Democratic Republic,Asia,,
+Bangladesh,Asia,,
+Cambodia,Asia,,
+Sao Tome and Principe,Africa,,
+Kenya,Africa,,
+Nepal,Asia,,
+Pakistan,Asia,,
+Myanmar,Asia,,
+Angola,Africa,,
+Swaziland,Africa,,
+Tanzania (United Republic of),Africa,,
+Nigeria,Africa,,
+Cameroon,Africa,,
+Madagascar,Africa,,
+Zimbabwe,Africa,,
+Mauritania,Africa,,
+Solomon Islands,Oceania,,
+Papua New Guinea,Oceania,,
+Comoros,Africa,,
+Yemen,Asia,,
+Lesotho,Africa,,
+Togo,Africa,,
+Haiti,North America,,
+Rwanda,Africa,,
+Uganda,Africa,,
+Benin,Africa,,
+Sudan,Africa,,
+Djibouti,Africa,,
+South Sudan,Africa,,
+Senegal,Africa,,
+Afghanistan,Asia,,
+CÃ´te d'Ivoire,Africa,,
+Malawi,Africa,,
+Ethiopia,Africa,,
+Gambia,Africa,,
+Congo (Democratic Republic of the),Africa,,
+Liberia,Africa,,
+Guinea-Bissau,Africa,,
+Mali,Africa,,
+Mozambique,Africa,,
+Sierra Leone,Africa,,
+Guinea,Africa,,
+Burkina Faso,Africa,,
+Burundi,Africa,,
+Chad,Africa,,
+Eritrea,Africa,,
+Central African Republic,Africa,,
+Niger,Africa,,
