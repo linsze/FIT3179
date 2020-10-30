@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "background": "#ecd9c6",
+  "title": "Years of Education vs Life Expectancy at Birth",
+  "data": {
+    "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/human_development.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "and": [
+          {"field": "Life Expectancy at Birth", "valid": true},
+          {"field": "Mean Years of Education", "valid": true}
+        ]
+      }
+    }
+  ],
+  "mark": "rect",
+  "width": 400,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "bin": {"maxbins": 10},
+      "field": "Life Expectancy at Birth",
+      "type": "quantitative",
+      "title": "Life Expectancy at Birth"
+    },
+    "y": {
+      "bin": {"maxbins": 20},
+      "field": "Mean Years of Education",
+      "type": "quantitative",
+      "title": "Years of Education"
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [3, 6, 9, 12],
+        "range": ["#edf8fb", "#b3cde3", "#8c96c6", "#88419d"]
+      },
+      "legend": {"title": "Number of Countries", "titleAnchor": "middle"}
+    },
+    "tooltip": [
+      {
+        "field": "bin_maxbins_10_Life Expectancy at Birth",
+        "title": "Min life expectancy",
+        "type": "quantitative"
+      },
+      {
+        "field": "bin_maxbins_10_Life Expectancy at Birth_end",
+        "title": "Max life expectancy",
+        "type": "quantitative"
+      },
+      {
+        "field": "__count",
+        "title": "Number of countries",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "legend": {
+      "labelFontSize": 11.2,
+      "labelColor": "#262626",
+      "titleFontSize": 12,
+      "titleColor": "#262626",
+      "rowPadding": 5,
+      "columnPadding": 0
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "labelFontWeight": 600,
+      "labelColor": "#595959",
+      "titleColor": "#333333",
+      "titleFontWeight": 600,
+      "titleFontSize": 12,
+      "titlePadding": 20
+    },
+    "title": {"color": "#0d0d0d", "fontSize": 14, "fontWeight": 600}
+  }
+}

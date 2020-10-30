@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "background": "#ecd9c6",
+  "width": 400,
+  "height": 400,
+  "title": {"text": "Average Gross National Income (GNI)"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/GNI.csv"
+  },
+  "transform": [
+    {"filter": "datum['Estimated Gross National Income per Capita'] > 0"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 0, "stroke": "#fff"},
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "mean",
+              "field": "Estimated Gross National Income per Capita",
+              "as": "Mean GNI"
+            }
+          ],
+          "groupby": ["Continent", "Gender"]
+        }
+      ],
+      "encoding": {
+        "theta": {"field": "Continent", "stack": true},
+        "radius": {
+          "field": "Mean GNI",
+          "stack": true,
+          "scale": {"type": "linear"}
+        },
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": {"range": ["#645699", "#b35900"]}
+        },
+        "tooltip": [
+          {"field": "Continent", "type": "nominal"},
+          {"field": "Gender", "type": "nominal"},
+          {"field": "Mean GNI", "type": "quantitative", "format": ".2f"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "color": "#161515",
+        "opacity": 0.3,
+        "radius": 120
+      },
+      "encoding": {
+        "text": {"field": "Continent", "type": "nominal"},
+        "theta": {"field": "Continent", "stack": true}
+      }
+    }
+  ],
+  "view": {"stroke": null},
+  "config": {
+    "legend": {
+      "orient": "top-left"
+    }
+  }
+}
