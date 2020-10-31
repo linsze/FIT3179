@@ -1,0 +1,344 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "background": "#fcf0e5",
+  "padding": 30,
+  "spacing": 20,
+  "params": [
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "labels": [
+          "All",
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "name": "Continent: "
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "width": 430,
+      "height": 330,
+      "title": "Life Expectancy vs Income per capita",
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/human_development.csv"
+          },
+          "encoding": {
+            "x": {
+              "field": "Gross National Income (GNI) per Capita",
+              "type": "quantitative",
+              "scale": {"type": "sqrt", "domain": [1000, 160000]}
+            },
+            "y": {
+              "field": "Life Expectancy at Birth",
+              "type": "quantitative",
+              "scale": {"type": "linear", "domain": [45, 85]}
+            },
+            "opacity": {
+              "condition": {
+                "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+                "value": 0.5
+              },
+              "value": 0.05
+            }
+          },
+          "layer": [
+            {
+              "selection": {"grid": {"type": "interval", "bind": "scales"}},
+              "mark": "circle",
+              "encoding": {
+                "color": {
+                  "field": "Continent",
+                  "type": "nominal",
+                  "scale": {"scheme": "dark2"}
+                },
+                "size": {
+                  "field": "Human Development Index (HDI)",
+                  "type": "quantitative",
+                  "title": "HDI",
+                  "scale": {
+                    "type": "threshold",
+                    "domain": [0.5, 0.65, 0.85],
+                    "range": [30, 100, 240, 500]
+                  }
+                },
+                "tooltip": [
+                  {"field": "Country", "type": "nominal"},
+                  {
+                    "field": "Life Expectancy at Birth",
+                    "type": "quantitative",
+                    "format": ",",
+                    "title": "Life Expectancy"
+                  },
+                  {
+                    "field": "Gross National Income (GNI) per Capita",
+                    "type": "quantitative",
+                    "format": ",",
+                    "title": "GNI per Capita"
+                  },
+                  {
+                    "field": "Human Development Index (HDI)",
+                    "type": "quantitative",
+                    "title": "HDI"
+                  },
+                  {
+                    "field": "Expected Years of Education",
+                    "type": "quantitative",
+                    "format": ","
+                  },
+                  {
+                    "field": "Mean Years of Education",
+                    "type": "quantitative",
+                    "format": ","
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "dx": -12,
+                "fontSize": 13,
+                "fontStyle": "italic"
+              },
+              "encoding": {
+                "text": {"field": "Country", "type": "nominal"},
+                "color": {"value": "black"},
+                "opacity": {
+                  "condition": {
+                    "test": "datum['Country'] == 'Japan' || datum['Country'] == 'Singapore' || datum['Country'] == 'Qatar' || datum['Country'] == 'Nigeria' || datum['Country'] == 'United States' || datum['Country'] == 'Maldives' || datum['Country'] == 'Saudi Arabia'",
+                    "value": 1
+                  },
+                  "value": 0
+                },
+                "tooltip": [
+                  {"field": "Country", "type": "nominal"},
+                  {
+                    "field": "Life Expectancy at Birth",
+                    "type": "quantitative",
+                    "format": ",",
+                    "title": "Life Expectancy"
+                  },
+                  {
+                    "field": "Gross National Income (GNI) per Capita",
+                    "type": "quantitative",
+                    "format": ",",
+                    "title": "GNI per Capita"
+                  },
+                  {
+                    "field": "Human Development Index (HDI)",
+                    "type": "quantitative",
+                    "title": "HDI"
+                  },
+                  {
+                    "field": "Expected Years of Education",
+                    "type": "quantitative",
+                    "format": ","
+                  },
+                  {
+                    "field": "Mean Years of Education",
+                    "type": "quantitative",
+                    "format": ","
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "x": 20,
+                "y": 7,
+                "text": "Life expectancy of countries with higher"
+              },
+              {"x": 20, "y": 5, "text": "income and HDI are generally greater"},
+              {"x": 30, "y": 42, "text": ""}
+            ]
+          },
+          "mark": {"type": "text", "fontSize": 12},
+          "encoding": {
+            "detail": {"field": "text", "type": "nominal"},
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "scale": {"rangeMax": 450},
+              "axis": null
+            },
+            "y": {"field": "y", "type": "quantitative", "axis": null},
+            "opacity": {"value": 1},
+            "text": {"field": "text"}
+          }
+        }
+      ],
+      "resolve": {"scale": {"x": "independent", "y": "independent"}}
+    },
+    {
+      "title": "Life Expectancy at Birth vs Years of Education",
+      "data": {
+        "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/human_development.csv"
+      },
+      "width": 450,
+      "height": 350,
+      "transform": [
+        {"filter": "datum['Life Expectancy at Birth']"},
+        {"window": [{"op": "count", "as": "index"}]},
+        {"fold": ["Life Expectancy at Birth", "Mean Years of Education"]},
+        {
+          "joinaggregate": [
+            {"op": "min", "field": "value", "as": "min"},
+            {"op": "max", "field": "value", "as": "max"}
+          ],
+          "groupby": ["key"]
+        },
+        {
+          "calculate": "(datum.value - datum.min) / (datum.max-datum.min)",
+          "as": "norm_val"
+        },
+        {"calculate": "(datum.min + datum.max) / 2", "as": "mid"}
+      ],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "gray"},
+          "encoding": {"detail": {"aggregate": "count"}, "x": {"field": "key"}}
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "color": {"type": "nominal", "field": "Continent"},
+            "detail": {"type": "nominal", "field": "index"},
+            "opacity": {
+              "condition": {
+                "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+                "value": 0.6
+              },
+              "value": 0.05
+            },
+            "x": {
+              "type": "nominal",
+              "field": "key",
+              "axis": {
+                "domain": false,
+                "labelAngle": 0,
+                "tickColor": "gray",
+                "title": null,
+                "labelPadding": 20,
+                "labelAlign": "center",
+                "labelFontSize": 12,
+                "labelFontWeight": 600,
+                "labelColor": "#333333"
+              }
+            },
+            "y": {"type": "quantitative", "field": "norm_val", "axis": null},
+            "tooltip": [
+              {"field": "Country", "type": "nominal"},
+              {
+                "field": "Gross National Income (GNI) per Capita",
+                "type": "quantitative"
+              },
+              {"field": "Life Expectancy at Birth", "type": "quantitative"}
+            ]
+          }
+        },
+        {
+          "encoding": {
+            "x": {"type": "nominal", "field": "key"},
+            "y": {"value": 0}
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "baseline": "middle",
+                "align": "right",
+                "dx": -5,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#595959"
+              },
+              "encoding": {"text": {"aggregate": "max", "field": "max"}}
+            },
+            {
+              "mark": {
+                "type": "tick",
+                "style": "tick",
+                "size": 8,
+                "color": "gray"
+              }
+            }
+          ]
+        },
+        {
+          "encoding": {
+            "x": {"type": "nominal", "field": "key"},
+            "y": {"value": 350}
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "baseline": "middle",
+                "align": "right",
+                "dx": -5,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#595959"
+              },
+              "encoding": {"text": {"aggregate": "min", "field": "min"}}
+            },
+            {
+              "mark": {
+                "type": "tick",
+                "style": "tick",
+                "size": 8,
+                "color": "gray"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "legend": {
+      "orient": "left",
+      "labelFontSize": 11.2,
+      "labelColor": "#262626",
+      "titleFontSize": 12,
+      "titleColor": "#262626",
+      "rowPadding": 5
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "labelFontWeight": 600,
+      "labelColor": "#595959",
+      "titleColor": "#333333",
+      "titleFontWeight": 600,
+      "titleFontSize": 12,
+      "titlePadding": 20
+    },
+    "title": {"color": "#0d0d0d", "fontSize": 14, "fontWeight": 600}
+  },
+  "resolve": {"scale": {"color": "shared"}}
+}

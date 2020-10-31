@@ -1,0 +1,220 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "background": "#ecd9c6",
+  "padding": 30,
+  "params": [
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "labels": [
+          "All",
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "name": "Continent: "
+      }
+    }
+  ],
+  "spacing": 70,
+  "vconcat": [
+    {
+      "width": 400,
+      "height": 250,
+      "title": "Average Life Expectancy at Birth",
+      "data": {
+        "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/Life_Expectancy_at_Birth.csv"
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "Continent",
+            "oneOf": [
+              "Asia",
+              "Africa",
+              "Europe",
+              "North America",
+              "Oceania",
+              "South America"
+            ]
+          }
+        },
+        {"filter": {"field": "Gender", "oneOf": ["Male", "Female"]}},
+        {
+          "aggregate": [
+            {
+              "op": "mean",
+              "field": "Life Expectancy at Birth",
+              "as": "Mean_life"
+            }
+          ],
+          "groupby": ["Continent", "Gender"]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Mean_life",
+          "type": "quantitative",
+          "title": "Average Life Expectancy (years)",
+          "scale": {"domain": [58, 78]},
+          "axis": null
+        },
+        "y": {
+          "field": "Continent",
+          "type": "nominal",
+          "axis": {"offset": 5, "ticks": false, "domain": false, "title": ""}
+        },
+        "opacity": {
+          "condition": {
+            "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+            "value": 1
+          },
+          "value": 0.2
+        }
+      },
+      "layer": [
+        {
+          "mark": {"type": "line", "strokeWidth": 3},
+          "encoding": {
+            "detail": {"field": "Continent", "type": "nominal"},
+            "color": {"value": "#caaaa3"}
+          }
+        },
+        {
+          "mark": {"type": "point", "filled": true},
+          "encoding": {
+            "color": {
+              "field": "Gender",
+              "type": "nominal",
+              "scale": {
+                "domain": ["Male", "Female"],
+                "range": ["#435E55FF", "#D64161FF"]
+              },
+              "title": "Gender"
+            },
+            "size": {"value": 400},
+            "opacity": {
+              "condition": {
+                "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+                "value": 0.7
+              },
+              "value": 0.2
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "line-bottom",
+            "dx": -10,
+            "fontSize": 11,
+            "fontStyle": "italic"
+          },
+          "encoding": {
+            "text": {
+              "field": "Mean_life",
+              "type": "quantitative",
+              "format": ".1f"
+            },
+            "color": {"value": "black"}
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Actual vs Expected Years of Education",
+        "anchor": "middle"
+      },
+      "spacing": 10,
+      "width": 170,
+      "height": 23,
+      "data": {
+        "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/Years_of_Education.csv"
+      },
+      "transform": [
+        {
+          "calculate": "{'Expected': '📘', 'Actual': '📙'}[datum['Education']]",
+          "as": "Edu_emoji"
+        },
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "groupby": ["Continent", "Education"]
+        },
+        {"filter": "datum['Edu_emoji']"}
+      ],
+      "mark": {"type": "text", "baseline": "middle"},
+      "encoding": {
+        "x": {"field": "rank", "type": "ordinal", "axis": null},
+        "column": {
+          "field": "Education",
+          "header": {"title": "", "labelFontSize": 13, "labelFontWeight": 600},
+          "spacing": 50
+        },
+        "row": {
+          "field": "Continent",
+          "header": {
+            "labelAngle": 0,
+            "labelAlign": "left",
+            "title": "",
+            "labelFontSize": 12,
+            "labelFontWeight": 600,
+            "labelColor": "#595959"
+          }
+        },
+        "text": {"field": "Edu_emoji", "type": "nominal"},
+        "size": {"value": 23},
+        "opacity": {
+          "condition": {
+            "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+            "value": 0.8
+          },
+          "value": 0.2
+        },
+        "tooltip": [
+          {"field": "Continent", "type": "ordinal"},
+          {
+            "field": "Years of Education",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "legend": {
+      "orient": "left",
+      "labelFontSize": 11.2,
+      "labelColor": "#262626",
+      "titleFontSize": 12,
+      "titleColor": "#262626",
+      "rowPadding": 5,
+      "columnPadding": 0
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "labelFontWeight": 600,
+      "labelColor": "#595959",
+      "titleColor": "#333333",
+      "titleFontWeight": 600,
+      "titleFontSize": 12
+    },
+    "title": {"color": "#0d0d0d", "fontSize": 14, "fontWeight": 600}
+  },
+  "resolve": {"scale": {"color": "independent"}}
+}

@@ -13,6 +13,12 @@
   ],
   "layer": [
     {
+      "selection": {
+        "Gender_select": {
+          "type": "single", 
+          "fields": ["Gender"], "bind": "legend"
+        } 
+      },
       "mark": {"type": "arc", "innerRadius": 0, "stroke": "#999999"},
       "transform": [
         {
@@ -39,7 +45,11 @@
           "scale": {"range": ["#BBCEE1FF", "#76528BFF"]}
         },
         "opacity": {
-          "value": 0.85
+          "condition": {
+            "selection": "Gender_select",
+            "value": 0.85
+          },
+          "value": 0.1
         },
         "tooltip": [
           {"field": "Continent", "type": "nominal"},
