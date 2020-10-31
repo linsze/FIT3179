@@ -146,13 +146,18 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* Drop down selection menu */
 #overall_composite .vega-bind {
-    overflow: visible;
-    position: absolute;
-    padding-top: 30px;
     font-size: 14px;
-    vertical-align: text-bottom;
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
+}
+
+#life_edu_composite .vega-bind {
+    position: relative;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-top: 20px;
+    top: -410px;
 }
 
 select {
@@ -161,19 +166,18 @@ select {
 
 select:focus > option:checked { 
     background: #8f8ffa;
-}
+} */
 
 /* All other textboxes in the page */
 .textbox {
     position: relative;
-    float: right;
+    float: left;
     height: 250px;
     width: 38%;
-    padding-right: 50px;
+    padding-right: 20px;
 }
 
 #overall_composite {
-    float: left;
     padding-top: 20px;
     width: 90%;
 }
@@ -183,7 +187,7 @@ select:focus > option:checked {
 }
 
 #education {
-    top: -390px;
+    top: -370px;
 }
 
 #income {
@@ -191,12 +195,12 @@ select:focus > option:checked {
     padding-top: 65px;
 }
 
-.visualization {
+/* .visualization {
     position: absolute;
-    top: 1710px;
+    top: 1750px;
     float: left;
     padding-left: 250px;
     overflow: hidden;
     padding-top: 50px;
-}
+} */
 
