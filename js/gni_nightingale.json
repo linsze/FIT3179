@@ -42,12 +42,12 @@
         "color": {
           "field": "Gender",
           "type": "nominal",
-          "scale": {"range": ["#BBCEE1FF", "#76528BFF"]}
+          "scale": {"range": ["#FFD85C", "#76528BFF"]}
         },
         "opacity": {
           "condition": {
             "selection": "Gender_select",
-            "value": 0.85
+            "value": 0.9
           },
           "value": 0.1
         },
