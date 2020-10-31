@@ -93,6 +93,7 @@
     </div>
 
     <!--Fifth row with Income vis-->
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="gni_radial"></div>
     <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="income">
       <h2>A Decent Standard of Living</h2>
       <p><b class="bold_inline_text">Income</b> is essential to meeting basic needs like food 
@@ -106,11 +107,15 @@
 <script type="text/javascript">
   var specVis1 = "https://linsze.github.io/FIT3179/js/choropleth_map.json";
   var specVis2 = "https://linsze.github.io/FIT3179/js/composite_vis.json";
+  var specVis3 = "https://linsze.github.io/FIT3179/js/nightingale_gni.json";
    
   vegaEmbed('#choropleth_map', specVis1, {"actions": false}).then(function(result) {
   }).catch(console.error);
 
   vegaEmbed('#composite', specVis2, {"actions": false}).then(function(result) {
+  }).catch(console.error);
+
+  vegaEmbed('#gni_radial', specVis3, {"actions": false}).then(function(result) {
   }).catch(console.error);
 
 </script>
