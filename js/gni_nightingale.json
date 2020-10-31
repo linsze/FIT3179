@@ -13,7 +13,7 @@
   ],
   "layer": [
     {
-      "mark": {"type": "arc", "innerRadius": 0, "stroke": "#fff"},
+      "mark": {"type": "arc", "innerRadius": 0, "stroke": "#404040"},
       "transform": [
         {
           "aggregate": [
@@ -36,7 +36,10 @@
         "color": {
           "field": "Gender",
           "type": "nominal",
-          "scale": {"range": ["#645699", "#b35900"]}
+          "scale": {"range": ["#BBCEE1FF", "#76528BFF"]}
+        },
+        "opacity": {
+          "value": 0.85
         },
         "tooltip": [
           {"field": "Continent", "type": "nominal"},
@@ -62,7 +65,9 @@
   "view": {"stroke": null},
   "config": {
     "legend": {
-      "orient": "top-left"
+      "orient": "top-left",
+      "titleFontSize": 12,
+      "labelFontSize": 12
     },
     "title": {
       "color": "#0d0d0d", 

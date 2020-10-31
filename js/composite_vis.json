@@ -33,7 +33,7 @@
   "vconcat": [
     {
       "width": 430,
-      "height": 300,
+      "height": 350,
       "title": "Life Expectancy vs Income per capita",
       "layer": [
         {
@@ -284,7 +284,7 @@
               "type": "nominal",
               "scale": {
                 "domain": ["Male", "Female"],
-                "range": ["#b35900", "#645699"]
+                "range": ["#435E55FF", "#D64161FF"]
               },
               "title": "Gender"
             },
