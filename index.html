@@ -25,10 +25,14 @@
     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="choropleth_map"></div>
 
     <div class="first_row_textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-      <h2>Human Development Index (HDI)</h2>
+      <h2>Human Development Index</h2>
       <p>HDI was developed as an alternative to simple money metrics, made up of basic ingredients 
         of human well-being: <b class="bold_inline_text">health</b>, <b class="bold_inline_text">
         education</b> and <b class="bold_inline_text">income</b>.</p>
+      <p>The concept of <b>capabilities </b>is used for analyzing well-being and understanding 
+        development problems. Basic capabilities valued by virtually everyone include
+        <b class="bold_inline_text">good health</b>, <b class="bold_inline_text">access to knowledge</b>, 
+        and a <b class="bold_inline_text">decent material standard of living</b>.</p>
     </div>
 
     <div class="first_row_column pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
@@ -59,19 +63,12 @@
     </div>
     
     <!--Second row with life expectancy vs gni vis-->
-    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="composite"></div>
-    </div>
-
-    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-      <h2>Capabilities</h2>
-      <p>Capabilities are the equipment one has to pursue a life of value. Basic capabilities 
-        valued by virtually everyone include good <b class="bold_inline_text">health</b>, access 
-        to <b class="bold_inline_text">knowledge</b>, and a decent material <b class="bold_inline_text">
-        standard of living</b>.</p>
-      <p>This concept is used for analyzing well-being and understanding development problems.</p>
+    <div id="overall_composite"></div>
     </div>
 
     <!--Third row with Health vis-->
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="life_edu_composite"></div>
+    </div>
     <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="health">
       <h2>A Long and Healthy Life</h2>
       <p>The <b class="bold_inline_text">most valuable capability</b> people possess is to 
@@ -108,16 +105,20 @@
 
 <script type="text/javascript">
   var specVis1 = "https://linsze.github.io/FIT3179/js/choropleth_map.json";
-  var specVis2 = "https://linsze.github.io/FIT3179/js/composite_vis.json";
-  var specVis3 = "https://linsze.github.io/FIT3179/js/gni_nightingale.json";
+  var specVis2 = "https://linsze.github.io/FIT3179/js/life_gni_edu_composite.json";
+  var specVis3 = "https://linsze.github.io/FIT3179/js/life_edu_composite.json";
+  var specVis4 = "https://linsze.github.io/FIT3179/js/gni_nightingale.json";
    
   vegaEmbed('#choropleth_map', specVis1, {"actions": false}).then(function(result) {
   }).catch(console.error);
 
-  vegaEmbed('#composite', specVis2, {"actions": false}).then(function(result) {
+  vegaEmbed('#overall_composite', specVis2, {"actions": false}).then(function(result) {
   }).catch(console.error);
 
-  vegaEmbed('#gni_radial', specVis3, {"actions": false}).then(function(result) {
+  vegaEmbed('#life_edu_composite', specVis3, {"actions": false}).then(function(result) {
+  }).catch(console.error);
+
+  vegaEmbed('#gni_radial', specVis4, {"actions": false}).then(function(result) {
   }).catch(console.error);
 
 </script>

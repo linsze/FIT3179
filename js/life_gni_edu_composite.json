@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "background": "#fcf0e5",
+  "background": "#ecd9c6",
   "padding": 30,
   "spacing": 20,
   "params": [
@@ -32,7 +32,7 @@
   ],
   "hconcat": [
     {
-      "width": 430,
+      "width": 450,
       "height": 330,
       "title": "Life Expectancy vs Income per capita",
       "layer": [
@@ -327,7 +327,8 @@
       "labelColor": "#262626",
       "titleFontSize": 12,
       "titleColor": "#262626",
-      "rowPadding": 5
+      "rowPadding": 5,
+      "padding": 25
     },
     "axis": {
       "labelFontSize": 12,

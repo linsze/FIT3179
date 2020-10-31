@@ -4,7 +4,7 @@
   "padding": 30,
   "params": [
     {
-      "name": "Continent_selection",
+      "name": "Continent_highlight",
       "bind": {
         "input": "select",
         "options": [
@@ -79,7 +79,7 @@
         },
         "opacity": {
           "condition": {
-            "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+            "test": "Continent_highlight == null || datum['Continent'] == Continent_highlight",
             "value": 1
           },
           "value": 0.2
@@ -108,7 +108,7 @@
             "size": {"value": 400},
             "opacity": {
               "condition": {
-                "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+                "test": "Continent_highlight == null || datum['Continent'] == Continent_highlight",
                 "value": 0.7
               },
               "value": 0.2
@@ -180,7 +180,7 @@
         "size": {"value": 23},
         "opacity": {
           "condition": {
-            "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+            "test": "Continent_highlight == null || datum['Continent'] == Continent_highlight",
             "value": 0.8
           },
           "value": 0.2

@@ -145,13 +145,14 @@ input[type=range]::-webkit-slider-runnable-track {
 /* End selection icon */
 
 /* Drop down selection menu */
-#composite .vega-bind {
+#overall_composite .vega-bind {
     overflow: visible;
     position: absolute;
     padding-top: 30px;
-    padding-left: 25px;
     font-size: 14px;
-    top: 350px;
+    vertical-align: text-bottom;
+    display: flex;
+    justify-content: center;
 }
 
 select {
@@ -166,30 +167,29 @@ select:focus > option:checked {
 .textbox {
     position: relative;
     float: right;
-    height: 300px;
+    height: 250px;
     width: 38%;
-    padding-right: 20px;
-    padding-top: 45px;
+    padding-right: 50px;
 }
 
-#composite {
+#overall_composite {
     padding-top: 20px;
     padding-bottom: 15px;
-    width: 50%;
-    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #health {
-    padding-left: 40px;
-    padding-top: 130px;
+    padding-left: 20px;
 }
 
 #education {
-    padding-top: 40px;
+    top: -390px;
 }
 
 #income {
-    padding-left: 50px;
+    left: 560px;
     padding-top: 65px;
 }
 
@@ -199,5 +199,6 @@ select:focus > option:checked {
     float: left;
     padding-left: 250px;
     overflow: hidden;
+    padding-top: 50px;
 }
 
