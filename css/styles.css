@@ -194,7 +194,10 @@ select:focus > option:checked {
     padding-top: 65px;
 }
 
-#gni_radial {
+.visualization {
+    position: absolute;
+    top: 1725px;
     float: left;
-    width: 50%;
+    padding-left: 250px;
 }
+
