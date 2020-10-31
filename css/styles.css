@@ -30,7 +30,7 @@ body {
 /* Slider */
 #choropleth_map .vega-bind {
     overflow: visible;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-left: 25px;
     font-size: 14px;
 }
@@ -195,8 +195,9 @@ select:focus > option:checked {
 
 .visualization {
     position: absolute;
-    top: 1780px;
+    top: 1710px;
     float: left;
     padding-left: 250px;
+    overflow: hidden;
 }
 

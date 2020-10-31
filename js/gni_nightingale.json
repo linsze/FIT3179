@@ -13,7 +13,7 @@
   ],
   "layer": [
     {
-      "mark": {"type": "arc", "innerRadius": 0, "stroke": "#666666"},
+      "mark": {"type": "arc", "innerRadius": 0, "stroke": "#999999"},
       "transform": [
         {
           "aggregate": [
