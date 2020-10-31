@@ -199,7 +199,7 @@
         "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/human_development.csv"
       },
       "width": 450,
-      "height": 350,
+      "height": 330,
       "transform": [
         {"filter": "datum['Life Expectancy at Birth']"},
         {"window": [{"op": "count", "as": "index"}]},
@@ -242,7 +242,7 @@
                 "labelAngle": 0,
                 "tickColor": "gray",
                 "title": null,
-                "labelPadding": 20,
+                "labelPadding": 40,
                 "labelAlign": "center",
                 "labelFontSize": 12,
                 "labelFontWeight": 600,
@@ -291,7 +291,7 @@
         {
           "encoding": {
             "x": {"type": "nominal", "field": "key"},
-            "y": {"value": 350}
+            "y": {"value": 330}
           },
           "layer": [
             {

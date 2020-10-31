@@ -39,6 +39,7 @@ input[type=range] {
     -webkit-appearance: none; 
     width: 150px;
     background-color: white;
+    margin-right: 10px;
     position: relative;
 }
 
@@ -161,6 +162,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 select {
+    margin-left: 10px;
     position: absolute;
 }
 
