@@ -173,7 +173,7 @@ select:focus > option:checked {
 }
 
 #composite {
-    padding-top: 45px;
+    padding-top: 20px;
     padding-bottom: 15px;
     width: 50%;
     float: left;
@@ -195,7 +195,7 @@ select:focus > option:checked {
 
 .visualization {
     position: absolute;
-    top: 1750px;
+    top: 1780px;
     float: left;
     padding-left: 250px;
 }
