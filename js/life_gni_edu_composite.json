@@ -327,8 +327,7 @@
       "labelColor": "#262626",
       "titleFontSize": 12,
       "titleColor": "#262626",
-      "rowPadding": 5,
-      "padding": 25
+      "rowPadding": 5
     },
     "axis": {
       "labelFontSize": 12,
