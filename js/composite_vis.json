@@ -33,7 +33,7 @@
   "vconcat": [
     {
       "width": 430,
-      "height": 350,
+      "height": 330,
       "title": "Life Expectancy vs Income per capita",
       "layer": [
         {
@@ -292,7 +292,7 @@
             "opacity": {
               "condition": {
                 "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
-                "value": 1
+                "value": 0.7
               },
               "value": 0.2
             }
