@@ -173,11 +173,9 @@ select:focus > option:checked {
 }
 
 #overall_composite {
+    float: left;
     padding-top: 20px;
-    padding-bottom: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 90%;
 }
 
 #health {
