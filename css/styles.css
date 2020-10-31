@@ -172,11 +172,12 @@ select:focus > option:checked {
 
 /* All other textboxes in the page */
 .textbox {
-    position: relative;
-    float: left;
-    height: 250px;
-    width: 38%;
+    overflow: visible;
+    position: absolute;
     padding-right: 20px;
+    margin-left: auto;
+    float: right;
+    width: 300px;
 }
 
 #overall_composite {
@@ -184,17 +185,22 @@ select:focus > option:checked {
     width: 90%;
 }
 
-#health {
-    padding-left: 20px;
-}
-
-#education {
-    top: -370px;
+#life_edu_composite {
+    position: absolute;
+    overflow: visible;
+    width: 50%;
+    float: left;
+    height: auto;
 }
 
 #income {
+    position: relative;
     left: 560px;
     padding-top: 65px;
+}
+
+#gni_radial {
+    
 }
 
 /* .visualization {

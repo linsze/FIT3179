@@ -33,7 +33,7 @@
     }
   ],
   "projection": {"type": "equalEarth"},
-  "mark": {"type": "geoshape", "stroke": "#9494b8"},
+  "mark": {"type": "geoshape", "stroke": "#747474"},
   "encoding": {
     "color": {
       "field": "Human Development Index (HDI)",
