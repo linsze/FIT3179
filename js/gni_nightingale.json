@@ -80,12 +80,12 @@
           },
           {"x": -555, "y": 16.5, "text": "income as well as for both genders."},
           {
-            "x": 350,
+            "x": 320,
             "y": 42,
             "text": "Africa appears to have income"
           },
-          {"x": 360, "y": 40.5, "text": "level which is distinctively lower"},
-          {"x": 350, "y": 39, "text": "than the rest of the continents."},
+          {"x": 330, "y": 40.5, "text": "level which is distinctively lower"},
+          {"x": 320, "y": 39, "text": "than the rest of the continents."},
           {"x": 500, "y": 42, "text": ""}
         ]
       },
