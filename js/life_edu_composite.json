@@ -140,8 +140,7 @@
         "text": "Actual vs Expected Years of Education",
         "anchor": "middle"
       },
-      "spacing": 10,
-      "width": 170,
+      "width": 180,
       "height": 23,
       "data": {
         "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/Years_of_Education.csv"
@@ -162,8 +161,8 @@
         "x": {"field": "rank", "type": "ordinal", "axis": null},
         "column": {
           "field": "Education",
-          "header": {"title": "", "labelFontSize": 13, "labelFontWeight": 600},
-          "spacing": 50
+          "header": {"title": "", "labelFontSize": 13, "labelFontWeight": 600, "labelPadding": 15},
+          "spacing": 110
         },
         "row": {
           "field": "Continent",
@@ -214,7 +213,11 @@
       "titleFontWeight": 600,
       "titleFontSize": 12
     },
-    "title": {"color": "#0d0d0d", "fontSize": 14, "fontWeight": 600}
+    "title": {
+      "color": "#0d0d0d", 
+      "fontSize": 14, 
+      "fontWeight": 600
+    }
   },
   "resolve": {"scale": {"color": "independent"}}
 }

@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&family=Merriweather&family=Poppins&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> -->
   
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
@@ -24,7 +26,7 @@
     <!--First row with world map and HD concept-->
     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="choropleth_map"></div>
 
-    <div class="first_row_textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+    <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
       <h2>Human Development Index</h2>
       <p>HDI was developed as an alternative to simple money metrics, made up of basic ingredients 
         of human well-being: <b class="bold_inline_text">health</b>, <b class="bold_inline_text">
@@ -89,8 +91,10 @@
         <div style="font-size: 13px; font-weight: 600; padding-top: 65px;">📙(Actual), 📘(Expected) = 2 years of education</div>
     </div>
 
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="empty_row"></div>>
+
     <!--Fifth row with Income vis-->
-    <!-- <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="gni_radial"></div>
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="gni_radial"></div>
     </div>
     <div class="textbox pure-u-1 pure-u-md-1-2 pure-u-lg-1-3" id="income">
       <h2>A Decent Standard of Living</h2>
@@ -98,12 +102,14 @@
         and shelter—and to moving beyond these necessities to a life of genuine choice and freedom. 
         It enables valuable options and alternatives, and its absence can limit life chances and 
         restrict access to many opportunities.</p>
-    </div> -->
+    </div>
 
   </div> 
-  <div>
-    <p>Created by Khoo Lin Sze</p>
-    <p>Last edited on: 31-10-2020</p>
+  <div id="author">
+    <p style="font-family: 'EB Garamond', serif;">Created by:
+      <b style="font-family: 'Lobster', cursive; font-weight: normal; font-size: x-large;"> Khoo Lin Sze</b>
+      <br> Last updated: 01-11-2020
+    </p>
   </div>
 
 <script type="text/javascript">

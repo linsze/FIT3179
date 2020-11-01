@@ -73,8 +73,8 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 /* End slider */
 
-/* Textbox in the first row */
-.first_row_textbox {
+/* All textboxes in the page */
+.textbox {
     overflow: hidden;
     position: relative;
     float: left;
@@ -170,45 +170,51 @@ select:focus > option:checked {
     background: #8f8ffa;
 } */
 
-/* All other textboxes in the page */
-.textbox {
-    overflow: visible;
-    position: absolute;
-    padding-right: 20px;
-    margin-left: auto;
-    float: right;
-    width: 300px;
-}
-
 #overall_composite {
     padding-top: 20px;
     width: 90%;
 }
 
 #life_edu_composite {
-    position: absolute;
+    position: relative;
     overflow: visible;
     width: 50%;
-    float: left;
+    float: inline-start;
     height: auto;
 }
 
-#income {
-    position: relative;
-    left: 560px;
-    padding-top: 65px;
+#health {
+    width: 40%;
+    float: right;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+
+#education {
+    position: absolute;
+    width: 40%;
+    top: 1340px;
+    padding-left: 70px;
+    padding-right: 50px;
 }
 
 #gni_radial {
-    
+    position: relative;
+    top: -50px;
 }
 
-/* .visualization {
+#income {
+    width: 40%;
     position: absolute;
-    top: 1750px;
-    float: left;
-    padding-left: 250px;
-    overflow: hidden;
-    padding-top: 50px;
-} */
+    right: 50px;
+    margin-top: -45px;
+}
 
+#author {
+    float: right;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 35px;
+    padding-right: 50px;
+}
