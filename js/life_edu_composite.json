@@ -162,7 +162,7 @@
         "column": {
           "field": "Education",
           "header": {"title": "", "labelFontSize": 13, "labelFontWeight": 600, "labelPadding": 15},
-          "spacing": 110
+          "spacing": 80
         },
         "row": {
           "field": "Continent",
