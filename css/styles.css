@@ -193,7 +193,7 @@ select:focus > option:checked {
     position: absolute;
     width: 43%;
     top: 1360px;
-    padding-left: 70px;
+    padding-left: 80px;
     padding-right: 50px;
 }
 
