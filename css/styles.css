@@ -217,10 +217,7 @@ select:focus > option:checked {
 }
 
 #author {
-    /* float: right; */
     font-size: larger;
     font-weight: bold;
     font-style: italic;
-    /* margin-top: -120px;
-    padding-right: 50px; */
 }
