@@ -29,9 +29,8 @@ body {
 
 /* Slider */
 #choropleth_map .vega-bind {
-    overflow: visible;
-    padding-top: 15px;
     padding-left: 25px;
+    margin-bottom: 20px;
     font-size: 14px;
 }
 
@@ -150,7 +149,6 @@ input[type=range]::-webkit-slider-runnable-track {
     font-size: 14px;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
 }
 
 #life_edu_composite .vega-bind {
@@ -171,11 +169,12 @@ select:focus > option:checked {
 } */
 
 #overall_composite {
-    padding-top: 20px;
+    margin-top: 20px;
     width: 90%;
 }
 
 #life_edu_composite {
+    margin-top: 20px;
     position: relative;
     overflow: visible;
     width: 50%;
@@ -184,27 +183,27 @@ select:focus > option:checked {
 }
 
 #health {
-    width: 40%;
+    margin-top: 30px;
+    width: 43%;
     float: right;
     padding-right: 50px;
-    padding-top: 5px;
 }
 
 #education {
     position: absolute;
-    width: 40%;
-    top: 1340px;
+    width: 43%;
+    top: 1360px;
     padding-left: 70px;
     padding-right: 50px;
 }
 
 #gni_radial {
     position: relative;
-    top: -50px;
+    top: -60px;
 }
 
 #income {
-    width: 40%;
+    width: 43%;
     position: absolute;
     right: 50px;
     margin-top: -45px;

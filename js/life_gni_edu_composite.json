@@ -195,128 +195,168 @@
     },
     {
       "title": "Life Expectancy at Birth vs Years of Education",
-      "data": {
-        "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/human_development.csv"
-      },
-      "width": 450,
-      "height": 330,
-      "transform": [
-        {"filter": "datum['Life Expectancy at Birth']"},
-        {"window": [{"op": "count", "as": "index"}]},
-        {"fold": ["Life Expectancy at Birth", "Mean Years of Education"]},
-        {
-          "joinaggregate": [
-            {"op": "min", "field": "value", "as": "min"},
-            {"op": "max", "field": "value", "as": "max"}
-          ],
-          "groupby": ["key"]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max-datum.min)",
-          "as": "norm_val"
-        },
-        {"calculate": "(datum.min + datum.max) / 2", "as": "mid"}
-      ],
       "layer": [
         {
-          "mark": {"type": "rule", "color": "gray"},
-          "encoding": {"detail": {"aggregate": "count"}, "x": {"field": "key"}}
-        },
-        {
-          "mark": "line",
-          "encoding": {
-            "color": {"type": "nominal", "field": "Continent"},
-            "detail": {"type": "nominal", "field": "index"},
-            "opacity": {
-              "condition": {
-                "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
-                "value": 0.6
-              },
-              "value": 0.05
+          "data": {
+            "url": "https://raw.githubusercontent.com/linsze/FIT3179/master/data/human_development.csv"
+          },
+          "width": 450,
+          "height": 330,
+          "transform": [
+            {"filter": "datum['Life Expectancy at Birth']"},
+            {"window": [{"op": "count", "as": "index"}]},
+            {"fold": ["Life Expectancy at Birth", "Mean Years of Education"]},
+            {
+              "joinaggregate": [
+                {"op": "min", "field": "value", "as": "min"},
+                {"op": "max", "field": "value", "as": "max"}
+              ],
+              "groupby": ["key"]
             },
-            "x": {
-              "type": "nominal",
-              "field": "key",
-              "axis": {
-                "domain": false,
-                "labelAngle": 0,
-                "tickColor": "gray",
-                "title": null,
-                "labelPadding": 40,
-                "labelAlign": "center",
-                "labelFontSize": 12,
-                "labelFontWeight": 600,
-                "labelColor": "#333333"
+            {
+              "calculate": "(datum.value - datum.min) / (datum.max-datum.min)",
+              "as": "norm_val"
+            },
+            {"calculate": "(datum.min + datum.max) / 2", "as": "mid"}
+          ],
+          "layer": [
+            {
+              "mark": {"type": "rule", "color": "gray"},
+              "encoding": {"detail": {"aggregate": "count"}, "x": {"field": "key"}}
+            },
+            {
+              "mark": "line",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Continent"},
+                "detail": {"type": "nominal", "field": "index"},
+                "opacity": {
+                  "condition": {
+                    "test": "Continent_selection == null || datum['Continent'] == Continent_selection",
+                    "value": 0.6
+                  },
+                  "value": 0.05
+                },
+                "x": {
+                  "type": "nominal",
+                  "field": "key",
+                  "axis": {
+                    "domain": false,
+                    "labelAngle": 0,
+                    "tickColor": "gray",
+                    "title": null,
+                    "labelPadding": 40,
+                    "labelAlign": "center",
+                    "labelFontSize": 12,
+                    "labelFontWeight": 600,
+                    "labelColor": "#333333"
+                  }
+                },
+                "y": {"type": "quantitative", "field": "norm_val", "axis": null},
+                "tooltip": [
+                  {"field": "Country", "type": "nominal"},
+                  {
+                    "field": "Gross National Income (GNI) per Capita",
+                    "type": "quantitative"
+                  },
+                  {"field": "Life Expectancy at Birth", "type": "quantitative"}
+                ]
               }
             },
-            "y": {"type": "quantitative", "field": "norm_val", "axis": null},
-            "tooltip": [
-              {"field": "Country", "type": "nominal"},
+            {
+              "encoding": {
+                "x": {"type": "nominal", "field": "key"},
+                "y": {"value": 0}
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "text",
+                    "baseline": "middle",
+                    "align": "right",
+                    "dx": -5,
+                    "fontSize": 12,
+                    "fontWeight": 600,
+                    "color": "#595959"
+                  },
+                  "encoding": {"text": {"aggregate": "max", "field": "max"}}
+                },
+                {
+                  "mark": {
+                    "type": "tick",
+                    "style": "tick",
+                    "size": 8,
+                    "color": "gray"
+                  }
+                }
+              ]
+            },
+            {
+              "encoding": {
+                "x": {"type": "nominal", "field": "key"},
+                "y": {"value": 330}
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "text",
+                    "baseline": "middle",
+                    "align": "right",
+                    "dx": -5,
+                    "fontSize": 12,
+                    "fontWeight": 600,
+                    "color": "#595959"
+                  },
+                  "encoding": {"text": {"aggregate": "min", "field": "min"}}
+                },
+                {
+                  "mark": {
+                    "type": "tick",
+                    "style": "tick",
+                    "size": 8,
+                    "color": "gray"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "data": {
+            "values": [
               {
-                "field": "Gross National Income (GNI) per Capita",
-                "type": "quantitative"
+                "x": -530,
+                "y": 40,
+                "text": "Generally, there is no obvious"
               },
-              {"field": "Life Expectancy at Birth", "type": "quantitative"}
+              {"x": -568, "y": 37, "text": "correlation between life"},
+              {"x": -548, "y": 34, "text": "expectancy and education."},
+              {
+                "x": -530,
+                "y": 20,
+                "text": "Parallel lines indicate positive"
+              },
+              {"x": -525, "y": 17, "text": "correlation. Crossing lines with"},
+              {"x": -540, "y": 14, "text": "fixed pattern indicate strong"},
+              {"x": -583, "y": 11, "text": "negative correlation."},
+              {"x": 500, "y": 42, "text": ""}
             ]
+          },
+          "mark": {"type": "text", "fontSize": 12},
+          "encoding": {
+            "detail": {"field": "text", "type": "nominal"},
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "scale": {"rangeMax": 500},
+              "axis": null
+            },
+            "y": {"field": "y", "type": "quantitative", "axis": null},
+            "opacity": {"value": 1},
+            "text": {"field": "text"}
           }
-        },
-        {
-          "encoding": {
-            "x": {"type": "nominal", "field": "key"},
-            "y": {"value": 0}
-          },
-          "layer": [
-            {
-              "mark": {
-                "type": "text",
-                "baseline": "middle",
-                "align": "right",
-                "dx": -5,
-                "fontSize": 12,
-                "fontWeight": 600,
-                "color": "#595959"
-              },
-              "encoding": {"text": {"aggregate": "max", "field": "max"}}
-            },
-            {
-              "mark": {
-                "type": "tick",
-                "style": "tick",
-                "size": 8,
-                "color": "gray"
-              }
-            }
-          ]
-        },
-        {
-          "encoding": {
-            "x": {"type": "nominal", "field": "key"},
-            "y": {"value": 330}
-          },
-          "layer": [
-            {
-              "mark": {
-                "type": "text",
-                "baseline": "middle",
-                "align": "right",
-                "dx": -5,
-                "fontSize": 12,
-                "fontWeight": 600,
-                "color": "#595959"
-              },
-              "encoding": {"text": {"aggregate": "min", "field": "min"}}
-            },
-            {
-              "mark": {
-                "type": "tick",
-                "style": "tick",
-                "size": 8,
-                "color": "gray"
-              }
-            }
-          ]
         }
-      ]
+      ],
+       "resolve": {"scale": {"x": "independent", "y": "independent"}}
     }
   ],
   "config": {
