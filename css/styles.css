@@ -219,7 +219,8 @@ select:focus > option:checked {
     padding-left: 30px;
     margin-top: 50px;
     margin-bottom: 20px;
-    float: left;
+    padding-right: 50px;
+    float: right;
 }
 
 #author {
