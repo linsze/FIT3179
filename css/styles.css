@@ -200,6 +200,7 @@ select:focus > option:checked {
 #gni_radial {
     position: relative;
     top: -40px;
+    margin-bottom: -100px;
 }
 
 #income {
@@ -209,15 +210,20 @@ select:focus > option:checked {
     margin-top: -40px;
 }
 
+#conclusion {
+    position: relative;
+}
+
 #references {
-    padding-right: 50px;
-    margin-top: -210px;
+    opacity: 0.8;
+    padding-left: 30px;
+    margin-top: 50px;
     margin-bottom: 20px;
-    float: right;
+    float: left;
 }
 
 #author {
-    font-size: larger;
+    font-size: large;
     font-weight: bold;
     font-style: italic;
 }
