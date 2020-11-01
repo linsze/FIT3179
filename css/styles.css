@@ -155,7 +155,7 @@ input[type=range]::-webkit-slider-runnable-track {
     position: relative;
     font-size: 14px;
     padding-left: 25px;
-    padding-top: 20px;
+    padding-top: 10px;
     top: -410px;
 }
 
@@ -192,21 +192,21 @@ select:focus > option:checked {
 #education {
     position: absolute;
     width: 43%;
-    top: 1360px;
-    padding-left: 80px;
+    top: 1380px;
+    padding-left: 45px;
     padding-right: 50px;
 }
 
 #gni_radial {
     position: relative;
-    top: -60px;
+    top: -40px;
 }
 
 #income {
     width: 43%;
     position: absolute;
     right: 50px;
-    margin-top: -45px;
+    margin-top: -40px;
 }
 
 #author {
@@ -214,6 +214,7 @@ select:focus > option:checked {
     font-size: larger;
     font-weight: bold;
     font-style: italic;
+    margin-top: -140px;
     margin-bottom: 35px;
     padding-right: 50px;
 }
