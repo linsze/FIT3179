@@ -176,7 +176,7 @@
               {"x": 30, "y": 42, "text": ""}
             ]
           },
-          "mark": {"type": "text", "fontSize": 12},
+          "mark": {"type": "text", "fontSize": 13, "fontWeight": 600, "color": "#26004d"},
           "encoding": {
             "detail": {"field": "text", "type": "nominal"},
             "x": {
@@ -324,30 +324,30 @@
           "data": {
             "values": [
               {
-                "x": -530,
-                "y": 40,
+                "x": -560,
+                "y": 30,
                 "text": "Generally, there is no obvious"
               },
-              {"x": -568, "y": 37, "text": "correlation between life"},
-              {"x": -548, "y": 34, "text": "expectancy and education."},
+              {"x": -630, "y": 27, "text": "correlation between life"},
+              {"x": -593, "y": 24, "text": "expectancy and education."},
               {
-                "x": -530,
-                "y": 20,
+                "x": -560,
+                "y": 10,
                 "text": "Parallel lines indicate positive"
               },
-              {"x": -525, "y": 17, "text": "correlation. Crossing lines with"},
-              {"x": -540, "y": 14, "text": "fixed pattern indicate strong"},
-              {"x": -583, "y": 11, "text": "negative correlation."},
-              {"x": 500, "y": 42, "text": ""}
+              {"x": -545, "y": 7, "text": "correlation. Crossing lines with"},
+              {"x": -578, "y": 4, "text": "fixed pattern indicate strong"},
+              {"x": -665, "y": 1, "text": "negative correlation."},
+              {"x": 400, "y": 42, "text": ""}
             ]
           },
-          "mark": {"type": "text", "fontSize": 12},
+          "mark": {"type": "text", "fontSize": 13, "fontWeight": 600, "color": "#26004d"},
           "encoding": {
             "detail": {"field": "text", "type": "nominal"},
             "x": {
               "field": "x",
               "type": "quantitative",
-              "scale": {"rangeMax": 500},
+              "scale": {"rangeMin": -100},
               "axis": null
             },
             "y": {"field": "y", "type": "quantitative", "axis": null},

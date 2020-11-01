@@ -1,7 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "background": "#ecd9c6",
-  "padding": 30,
   "width": 550,
   "height": 400,
   "title": {"text": "Average Gross National Income (GNI)"},
@@ -75,28 +74,27 @@
       "data": {
         "values": [
           {
-            "x": -550,
-            "y": 15,
+            "x": -580,
+            "y": 18,
             "text": "Europe has the greatest overall"
           },
-          {"x": -525, "y": 13.5, "text": "income as well as for both genders."},
+          {"x": -555, "y": 16.5, "text": "income as well as for both genders."},
           {
-            "x": -550,
-            "y": 35,
+            "x": 350,
+            "y": 42,
             "text": "Africa appears to have income"
           },
-          {"x": -545, "y": 33.5, "text": "level which is distinctively lower"},
-          {"x": -555, "y": 32, "text": "than the rest of the continents"},
+          {"x": 360, "y": 40.5, "text": "level which is distinctively lower"},
+          {"x": 350, "y": 39, "text": "than the rest of the continents."},
           {"x": 500, "y": 42, "text": ""}
         ]
       },
-      "mark": {"type": "text", "fontSize": 12},
+      "mark": {"type": "text", "fontSize": 13, "fontWeight": 600, "color": "#26004d"},
       "encoding": {
         "detail": {"field": "text", "type": "nominal"},
         "x": {
           "field": "x",
           "type": "quantitative",
-          "scale": {"rangeMax": 500},
           "axis": null
         },
         "y": {"field": "y", "type": "quantitative", "axis": null},

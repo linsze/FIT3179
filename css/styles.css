@@ -216,7 +216,6 @@ select:focus > option:checked {
 
 #references {
     opacity: 0.8;
-    padding-left: 30px;
     margin-top: 50px;
     margin-bottom: 20px;
     padding-right: 50px;
